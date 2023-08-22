@@ -26,15 +26,6 @@ export default function Home() {
   return (
     <main>
       <CollapseCard />
-      {progressData.map((item) => (
-        <ProgressCircular
-          name={item.name}
-          currVal={item.currVal}
-          totalVal={item.totalVal}
-          color={item.color}
-          key={item.name}
-        />
-      ))}
     </main>
   );
 }
