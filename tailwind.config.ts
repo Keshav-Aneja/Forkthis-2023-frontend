@@ -14,10 +14,13 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+     colors:{
+      lineStopLeft:"rgba(42, 45, 47, 0.4)",
+      lineStopMiddle:"rgba(84, 87, 89, 1)",
+      lineStopRight:"rgba(42, 45, 47, 0.4)"
+     }
     },
-    linearGradientColors: (theme) => theme("colors"),
-    radialGradientColors: (theme) => theme("colors"),
-    conicGradientColors: (theme) => theme("colors"),
+    
   },
   plugins: [require("tailwindcss-gradients")],
 };
