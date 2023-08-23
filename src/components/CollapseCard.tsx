@@ -37,7 +37,7 @@ const CollapseCard : React.FC<RepoDetails> =({
 
 
   return (
-    <section className='bg-[#000] flex justify-around items-center py-[5px] flex-col border-gradientA font-gilroyRegular border-blue-100 border-b-[0.5px] w-full'>
+    <section className='bg-[#000] flex justify-around items-center py-[5px] flex-col border-gradientA font-gilroyRegular border-[#212426] border-b-[0.5px] w-full'>
       <section className='bg-[#000] flex justify-between items-center py-[5px] px-8 w-full'>
       <section className='bg-[#000] flex justify-between items-center py-[5px] px-8 w-full '>
       <p>{srNo}</p>
