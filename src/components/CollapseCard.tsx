@@ -5,6 +5,7 @@ import { Collapse } from 'react-collapse';
 import ProgressCircular from './ProgressCircular';
 
 interface RepoDetails {
+  srNo:number;
   repoName: string;
   techStack: string;
   issues: number;
@@ -20,33 +21,9 @@ const CollapseCard : React.FC<RepoDetails> =({
   techStack,
   issues,
   issuesList,
+  srNo
 })=> {
-  const arrRepo=[
-  {
-    srNo:1,
-    desctiption:"Issue Desciption",
-    difficulty:"Easy",
-    points:5
-  },
-  {
-    srNo:2,
-    desctiption:"Issue Desciption",
-    difficulty:"Mid",
-    points:5
-  },
-  {
-    srNo:3,
-    desctiption:"Issue Desciption",
-    difficulty:"Hard",
-    points:5
-  },
-  {
-    srNo:4,
-    desctiption:"Issue Desciption",
-    difficulty:"Hard",
-    points:5
-  }]
-
+  
   const [isCollapsed, setIsCollapsed] = useState(true);
   const theme= {
     collapse: 'ReactCollapse--collapse  w-full transition-all duration-500',
@@ -63,7 +40,7 @@ const CollapseCard : React.FC<RepoDetails> =({
     <section className='bg-[#000] flex justify-around items-center py-[5px] flex-col border-gradientA font-gilroyRegular border-blue-100 border-b-[0.5px] w-full'>
       <section className='bg-[#000] flex justify-between items-center py-[5px] px-8 w-full'>
       <section className='bg-[#000] flex justify-between items-center py-[5px] px-8 w-full '>
-      <p>1</p>
+      <p>{srNo}</p>
       <h1>{repoName}</h1>
       <h3>{techStack}</h3>
       <p>{issues}</p>

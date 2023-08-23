@@ -1,5 +1,5 @@
 [
-    {
+    {   "srNo":1,
         "repoName":"FFCS Planner",
         "techStack":"Next.js MongoDB MySQL Tailwind",
         "issues":5,
@@ -31,6 +31,7 @@
         ]
     },
     {
+        "srNo":2,
         "repoName":"FFCS Planner",
         "techStack":"Next.js MongoDB MySQL Tailwind",
         "issues":5,
@@ -62,6 +63,7 @@
         ]
     },
     {
+        "srNo":3,
         "repoName":"FFCS Planner",
         "techStack":"Next.js MongoDB MySQL Tailwind",
         "issues":5,
@@ -93,6 +95,7 @@
         ]
     },
     {
+        "srNo": 4,
         "repoName":"FFCS Planner",
         "techStack":"Next.js MongoDB MySQL Tailwind",
         "issues":5,

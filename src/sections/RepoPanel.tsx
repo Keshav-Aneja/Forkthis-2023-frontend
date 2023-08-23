@@ -9,7 +9,7 @@ const RepoPanel : React.FC =()=>{
      {repoData.map((repo:any)=>{
                     return(
                     <section key={repo.repo} className="w-full">
-                        <CollapseCard repoName={repo.repoName} techStack={repo.techStack} issues={repo.issues} issuesList={repo.issuesList}/>                      
+                        <CollapseCard srNo={repo.srNo} repoName={repo.repoName} techStack={repo.techStack} issues={repo.issues} issuesList={repo.issuesList}/>                      
                     </section>)
                 })}
    </main>
