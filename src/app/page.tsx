@@ -1,6 +1,7 @@
 import React from "react";
 import CollapseCard from "@/components/CollapseCard";
 import ProgressCircular from "../components/ProgressCircular";
+import RepoPanel from "@/sections/RepoPanel";
 let progressData = [
   {
     name: "task",
@@ -25,7 +26,7 @@ let progressData = [
 export default function Home() {
   return (
     <main>
-      <CollapseCard />
+      <RepoPanel/>
     </main>
   );
 }

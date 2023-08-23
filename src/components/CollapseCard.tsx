@@ -4,7 +4,23 @@ import React, { useState } from 'react';
 import { Collapse } from 'react-collapse';
 import ProgressCircular from './ProgressCircular';
 
-export default function CollapseCard() {
+interface RepoDetails {
+  repoName: string;
+  techStack: string;
+  issues: number;
+  issuesList: Array<Object>;
+}
+
+
+
+
+
+const CollapseCard : React.FC<RepoDetails> =({
+  repoName,
+  techStack,
+  issues,
+  issuesList,
+})=> {
   const arrRepo=[
   {
     srNo:1,
@@ -13,19 +29,19 @@ export default function CollapseCard() {
     points:5
   },
   {
-    srNo:1,
+    srNo:2,
     desctiption:"Issue Desciption",
     difficulty:"Mid",
     points:5
   },
   {
-    srNo:1,
+    srNo:3,
     desctiption:"Issue Desciption",
     difficulty:"Hard",
     points:5
   },
   {
-    srNo:1,
+    srNo:4,
     desctiption:"Issue Desciption",
     difficulty:"Hard",
     points:5
@@ -44,13 +60,13 @@ export default function CollapseCard() {
 
 
   return (
-    <section className='bg-[#000] flex justify-around items-center py-[5px] flex-col border-gradientA font-gilroyRegular border-blue-100 border-b-[0.5px]'>
+    <section className='bg-[#000] flex justify-around items-center py-[5px] flex-col border-gradientA font-gilroyRegular border-blue-100 border-b-[0.5px] w-full'>
       <section className='bg-[#000] flex justify-between items-center py-[5px] px-8 w-full'>
       <section className='bg-[#000] flex justify-between items-center py-[5px] px-8 w-full '>
       <p>1</p>
-      <h1>FFCS Planner</h1>
-      <h3>Next.js MongoDB MySQL Tailwind</h3>
-      <p>5</p>
+      <h1>{repoName}</h1>
+      <h3>{techStack}</h3>
+      <p>{issues}</p>
       
 
         <Image width={16} height={16} alt="arrowButton" src="/dashboard/arrow.svg"  style={{ transform: `rotate(${rotationAngle}deg)` }} className="duration-300 transition-all" onClick={()=>{setIsCollapsed(!isCollapsed)
@@ -60,7 +76,7 @@ export default function CollapseCard() {
       </section>
       <Collapse isOpened={!isCollapsed} theme={theme}>
         <section className='flex w-full flex-row items-center justify-between px-8'>
-        <table className=' w-[75%] bg-[#212426] rounded-[14px] border-spacing-10' id='issuesContainer '>
+        <table className=' w-[100%] bg-[#212426] rounded-[14px] border-spacing-10' id='issuesContainer '>
           <thead >
             <tr >
               <th className='py-3'>Sr.No</th>
@@ -70,12 +86,12 @@ export default function CollapseCard() {
             </tr>
           </thead>
           <tbody >
-            {arrRepo.map((repo) => (
-              <tr key={repo.srNo} className="bg-[#000] border-y-8 border-[#000]">
-                <td className='text-center'>{repo.srNo}</td>
-                <td className='text-center'>{repo.desctiption}</td>
-                <td className='text-center'>{repo.difficulty}</td>
-                <td className='text-center'>{repo.points}</td>
+            {issuesList.map((issue:any) => (
+              <tr key={issue.srNo} className="bg-[#000] border-y-8 border-[#000]">
+                <td className='text-center'>{issue.srNo}</td>
+                <td className='text-center'>{issue.description}</td>
+                <td className='text-center'>{issue.difficulty}</td>
+                <td className='text-center'>{issue.points}</td>
               </tr>
             ))}
           </tbody>
@@ -91,3 +107,4 @@ export default function CollapseCard() {
     </section>
   );
 }
+export default CollapseCard;
