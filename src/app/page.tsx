@@ -1,7 +1,12 @@
+"use client"
 import React from "react";
 import CollapseCard from "@/components/CollapseCard";
 import ProgressCircular from "../components/ProgressCircular";
 import RepoPanel from "@/sections/RepoPanel";
+import CountdownTimer from "@/components/CountdownTimer";
+import DashboardInfo from "@/sections/DashboardInfo";
+import Sidebar from "@/components/Sidebar";
+const targetDate = new Date('2023-08-31 T23:59:59');
 let progressData = [
   {
     name: "task",
@@ -25,8 +30,16 @@ let progressData = [
 
 export default function Home() {
   return (
-    <main>
-      <RepoPanel/>
+    <main className="">
+      <div className="flex w-[100%] z-0">
+        <Sidebar />
+        <div className="w-[100%]">
+        <DashboardInfo />
+
+        <RepoPanel />
+        </div>
+      </div>
+      
     </main>
   );
 }
