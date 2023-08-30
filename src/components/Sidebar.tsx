@@ -12,7 +12,7 @@ export default function Sidebar() {
       className={`mainNav bg-[#212426] fixed w-[100%] rounded-br-2xl rounded-bl-2xl h-12 p-2 ${
         menuOpened ? "h-fit pb-5 p-2" : ""
       } md:h-16 md:flex md:items-center md:justify-center md:text-lg lg:rounded-br-2xl lg:h-screen lg:w-[7%]
-       lg:rounded-tr-2xl lg:rounded-bl-none lg:relative lg:p-0 lg:hover:w-[8%] duration-300 ease-linear`}
+       lg:rounded-tr-2xl lg:rounded-bl-none lg:relative lg:p-0 lg:hover:w-[8%] duration-300 ease-linear z-50`}
     >
       <div className="icon md:hidden" onClick={toggleMenu}>
         <svg viewBox="0 0 100 80" width="40" height="35">

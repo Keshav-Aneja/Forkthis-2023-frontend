@@ -6,11 +6,11 @@ export default function DashboardInfo() {
 
   return (
     <div>
-      <div className="flex py-5 mb-10 justify-center items-center font-gilroyRegular text-5xl font-black">
+      <div className="flex py-5 mb-12 mt-20 justify-center items-center font-gilroyRegular text-5xl font-black lg:mt-0 lg:mb-10">
         Dashboard
       </div>
-      <div className="flex w-[100%] bg-opacity-30 px-3 py-5 justify-between">
-        <div className="ml-10 px-2 py-2 flex flex-col justify-between items-center">
+      <div className="flex w-[100%] bg-opacity-30 px-3 py-5 flex-col items-center justify-center md:flex-row md:justify-between md:items-start gap-10 md:gap-0">
+        <div className="ml-0 px-2 py-2 flex flex-col justify-between items-center md:ml-10">
           <div className="mb-12 text-2xl font-bold font-gilroyRegular text-center">
             Time Left
           </div>
