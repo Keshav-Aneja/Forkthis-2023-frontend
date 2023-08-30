@@ -16,7 +16,7 @@ const ProgressCircular: React.FC<ProgressCircularProps> = ({
   let progress = (currVal * 360) / totalVal;
   return (
     <>
-      <div className="w-60 aspect-square rounded-[50%] flex justify-center items-center  border-2 border-[#343739] md:w-40">
+      <div className="w-60 aspect-square rounded-[50%] flex justify-center items-center  border-2 border-[#343739] md:w-40 lg:w-60">
         <div
           className="circle w-[90%] h-[90%] rounded-[50%] flex justify-center items-center"
           style={{
