@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useMediaQuery } from "@mui/material";
+import Link from "next/link";
+import Resources from "../app/Resources/page";
 export default function Sidebar() {
   const isDesktop = useMediaQuery("(min-width: 768px)");
   const [menuOpened, setMenuOpened] = useState(isDesktop);
@@ -7,12 +9,13 @@ export default function Sidebar() {
   const toggleMenu = () => {
     setMenuOpened((prevMenuOpened) => !prevMenuOpened);
   };
+
   return (
     <div
       className={`mainNav bg-[#212426] fixed w-[100%] rounded-br-2xl rounded-bl-2xl h-12 p-2 ${
         menuOpened ? "h-fit pb-5 p-2" : ""
       } md:h-16 md:flex md:items-center md:justify-center md:text-lg lg:rounded-br-2xl lg:h-screen lg:w-[7%]
-       lg:rounded-tr-2xl lg:rounded-bl-none lg:relative lg:p-0 lg:hover:w-[8%] duration-300 ease-linear z-50`}
+       lg:rounded-tr-2xl lg:rounded-bl-none lg:p-0 lg:hover:w-[8%] duration-300 ease-linear z-50 lg:fixed`}
     >
       <div className="icon md:hidden" onClick={toggleMenu}>
         <svg viewBox="0 0 100 80" width="40" height="35">
@@ -95,27 +98,29 @@ export default function Sidebar() {
               Dashboard
             </span>
           </div>
-          <div className="w-full flex justify-between gap-5 items-center md:justify-center md:gap-2 lg:flex-col lg:h-[33.3%]  lg:hover:bg-black  lg:hover:text-sm duration-300">
-            <svg
-              width="2rem"
-              height="auto"
-              viewBox="0 0 49 48"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="md:w-[1.5rem] lg:w-[2.2rem]"
-            >
-              <path
-                d="M33.97 28.3112C36.7547 25.7523 38.5 22.08 38.5 18C38.5 10.268 32.232 4 24.5 4C16.768 4 10.5 10.268 10.5 18C10.5 22.3271 12.4631 26.1957 15.5473 28.7637M33.97 28.3112C31.4774 30.6017 28.152 32 24.5 32C21.0951 32 17.9741 30.7845 15.5473 28.7637M33.97 28.3112L37.5 44L36.7828 43.5586C29.2967 38.9518 19.8138 39.1242 12.5 44L15.5473 28.7637"
-                stroke="#C2C2C2"
-                stroke-width="4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            <span className="font-gilroyRegular font-bold  text-center">
-              Resources
-            </span>
-          </div>
+          <Link href="/Resources">
+            <div className="w-full flex justify-between gap-5 items-center md:justify-center md:gap-2 lg:flex-col lg:h-[33.3%]  lg:hover:bg-black  lg:hover:text-sm duration-300">
+              <svg
+                width="2rem"
+                height="auto"
+                viewBox="0 0 49 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="md:w-[1.5rem] lg:w-[2.2rem]"
+              >
+                <path
+                  d="M33.97 28.3112C36.7547 25.7523 38.5 22.08 38.5 18C38.5 10.268 32.232 4 24.5 4C16.768 4 10.5 10.268 10.5 18C10.5 22.3271 12.4631 26.1957 15.5473 28.7637M33.97 28.3112C31.4774 30.6017 28.152 32 24.5 32C21.0951 32 17.9741 30.7845 15.5473 28.7637M33.97 28.3112L37.5 44L36.7828 43.5586C29.2967 38.9518 19.8138 39.1242 12.5 44L15.5473 28.7637"
+                  stroke="#C2C2C2"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span className="font-gilroyRegular font-bold  text-center">
+                Resources
+              </span>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
