@@ -1,6 +1,6 @@
 'use client';
 import Card from "@/components/Card";
-import Sidebarrr from "@/components/Sidebarrr";
+import Sidebarrr from "@/components/Sidebar";
 import Cardbox from "@/components/Cardbox";
 
 import img1 from "/public/images/cat.png";

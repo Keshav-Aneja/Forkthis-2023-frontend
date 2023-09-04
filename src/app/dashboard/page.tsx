@@ -1,5 +1,5 @@
 "use client";
-import Sidebarrr from "@/components/Sidebarrr";
+import Sidebarrr from "@/components/Sidebar";
 import DashboardInfo from "@/sections/DashboardInfo";
 import RepoPanel from "@/sections/RepoPanel";
 export default function page() {

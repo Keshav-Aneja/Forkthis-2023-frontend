@@ -5,7 +5,7 @@ import ProgressCircular from "../components/ProgressCircular";
 import RepoPanel from "@/sections/RepoPanel";
 import CountdownTimer from "@/components/CountdownTimer";
 import DashboardInfo from "@/sections/DashboardInfo";
-import Sidebarrr from "@/components/Sidebarrr";
+import Sidebarrr from "@/components/Sidebar";
 const targetDate = new Date("2023-08-31 T23:59:59");
 let progressData = [
   {
