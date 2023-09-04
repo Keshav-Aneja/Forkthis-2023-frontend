@@ -28,6 +28,10 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-gradients")],
+  plugins: [
+    require("tailwindcss-gradients"),
+    require('tailwind-scrollbar'),
+  ], 
+  
 };
 export default config;
