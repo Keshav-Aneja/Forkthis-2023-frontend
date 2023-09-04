@@ -11,7 +11,7 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        sm: "440px", // You can adjust the pixel value to your preferred breakpoint width
+        sm: "320px", // You can adjust the pixel value to your preferred breakpoint width
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
