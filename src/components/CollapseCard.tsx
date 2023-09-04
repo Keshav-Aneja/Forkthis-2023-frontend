@@ -36,8 +36,8 @@ const CollapseCard: React.FC<RepoDetails> = ({
       <section className="bg-[#000] flex justify-between items-center py-[5px] px-8 w-full">
         <section className="bg-[#000] flex justify-between items-center py-[5px] px-8 w-full ">
           <p>{srNo}</p>
-          <h1>{repoName}</h1>
-          <h3>{techStack}</h3>
+          <h1 >{repoName}</h1>
+          <h3 className="sm:hidden md:block">{techStack}</h3>
           <p>{issues}</p>
 
           <Image
@@ -59,7 +59,7 @@ const CollapseCard: React.FC<RepoDetails> = ({
         </section>
       </section>
       <Collapse isOpened={!isCollapsed} theme={theme}>
-        <section className="flex w-full flex-row items-center justify-between px-8">
+        <section className="flex w-full  items-center justify-between  sm:px-2 md:px-8 sm:flex-col md:flex-row">
           <table
             className=" w-[100%] bg-[#212426] rounded-[14px] border-spacing-10"
             id="issuesContainer "
@@ -79,7 +79,7 @@ const CollapseCard: React.FC<RepoDetails> = ({
                   className="bg-[#000] border-y-8 border-[#000]"
                 >
                   <td className="text-center">{issue.srNo}</td>
-                  <td className="text-center">{issue.description}</td>
+                  <td className="text-center">{(issue.description)}</td>
                   <td className="text-center">{issue.difficulty}</td>
                   <td className="text-center">{issue.points}</td>
                 </tr>
