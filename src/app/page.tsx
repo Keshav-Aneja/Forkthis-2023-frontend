@@ -29,16 +29,5 @@ let progressData = [
 ];
 
 export default function Home() {
-  return (
-    <main className="">
-      <div className="flex w-[100%] z-0">
-        <Sidebarrr />
-        <div className="w-[100%] lg:ml-[7%]">
-          <DashboardInfo />
-
-          <RepoPanel />
-        </div>
-      </div>
-    </main>
-  );
+  return <main className=""></main>;
 }

@@ -1,17 +1,14 @@
-'use client';
+"use client";
 
 import { useState, useEffect, useRef } from "react";
 import { useMediaQuery } from "@mui/material";
 import Link from "next/link";
-import Resources from "../app/Resources/page";
+import Resources from "../app/resources/page";
 import Image from "next/image";
-import image1 from "/public/images/userimagenobg.png";
-import Image2  from "/public/images/arawrdnobg.png";
-
 
 export default function Sidebarrr() {
-  const isDesktop = useMediaQuery("(min-width: 768px)");
-  const [menuOpened, setMenuOpened] = useState(isDesktop);
+  const isDesktop = useMediaQuery("(max-width: 500px)");
+  const [menuOpened, setMenuOpened] = useState(!isDesktop);
 
   const toggleMenu = () => {
     setMenuOpened((prevMenuOpened) => !prevMenuOpened);
@@ -25,11 +22,11 @@ export default function Sidebarrr() {
        lg:rounded-tr-2xl lg:rounded-bl-none lg:p-0 lg:hover:w-[8%] duration-300 ease-linear z-50 lg:fixed`}
     >
       <div className="icon md:hidden" onClick={toggleMenu}>
-        {/* <svg viewBox="0 0 100 80" width="40" height="35">
+        <svg viewBox="0 0 100 80" width="40" height="35">
           <rect width="100" height="5" rx="8" fill="#C2C2C2"></rect>
           <rect y="30" width="100" height="5" rx="8" fill="#C2C2C2"></rect>
           <rect y="60" width="100" height="5" rx="8" fill="#C2C2C2"></rect>
-        </svg> */}
+        </svg>
       </div>
       <div
         className={`nav flex justify-center items-center flex-col gap-5 md:visible lg:visible md:flex-row md:justify-around md:w-[100%] md:items-baseline lg:flex-col lg:text-xs lg:h-[100%] lg:gap-0 ${
@@ -37,17 +34,14 @@ export default function Sidebarrr() {
         }`}
       >
         <div className="home w-[60%] flex justify-between gap-5 items-center md:justify-center md:w-max md:gap-2 lg:flex-col lg:py-12 lg:gap-3 lg:w-[100%] lg:h-[30%] lg:hover:bg-black lg:px-5  lg:hover:text-sm duration-300">
-          
           <Image
             className="md:w-[1.5rem] lg:w-[2.2rem]"
-            src={image1}
+            src="/dashboard/userIcon.png"
             width={50}
             height={50}
             alt="Picture of the author"
           />
-          <span className="font-gilroyRegular font-bold">
-            Home
-          </span>
+          <span className="font-gilroyRegular font-bold">Home</span>
         </div>
 
         <div
@@ -61,7 +55,7 @@ export default function Sidebarrr() {
           <div className="w-full flex justify-between gap-5 items-center md:justify-center md:gap-2 lg:flex-col lg:h-[33.3%]  lg:hover:bg-black  lg:hover:text-sm  duration-300">
             <Image
               className="md:w-[1.5rem] lg:w-[2.2rem]"
-              src={Image2}
+              src="/dashboard/awardIcon.png"
               width={50}
               height={50}
               alt="Picture of the author"
@@ -74,7 +68,7 @@ export default function Sidebarrr() {
           <div className="w-full flex justify-between gap-5 items-center md:justify-center md:gap-2 lg:flex-col lg:h-[33.3%]  lg:hover:bg-black  lg:hover:text-sm  duration-300">
             <Image
               className="md:w-[1.5rem] lg:w-[2.2rem]"
-              src={Image2}
+              src="/dashboard/awardIcon.png"
               width={50}
               height={50}
               alt="Picture of the author"
@@ -84,26 +78,23 @@ export default function Sidebarrr() {
             </span>
           </div>
 
-          <Link href="/Resources" className="w-full flex justify-between gap-5 items-center md:justify-center md:gap-2 lg:flex-col lg:h-[33.3%]  lg:hover:bg-black  lg:hover:text-sm duration-300">
+          <Link
+            href="/Resources"
+            className="w-full flex justify-between gap-5 items-center md:justify-center md:gap-2 lg:flex-col lg:h-[33.3%]  lg:hover:bg-black  lg:hover:text-sm duration-300"
+          >
+            <Image
+              className="md:w-[1.5rem] lg:w-[2.2rem]"
+              src="/dashboard/awardIcon.png"
+              width={50}
+              height={50}
+              alt="Picture not shown"
+            />
 
-            
-              <Image
-                className="md:w-[1.5rem] lg:w-[2.2rem]"
-                src={image1}
-                width={50}
-                height={50}
-                alt="Picture not shown"
-                />
-
-              <span className="font-gilroyRegular font-bold  text-center">
-                Resources
-              </span>
-            
-
-           </Link> 
-
+            <span className="font-gilroyRegular font-bold  text-center">
+              Resources
+            </span>
+          </Link>
         </div>
-
       </div>
     </div>
   );
