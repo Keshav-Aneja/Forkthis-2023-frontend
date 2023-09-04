@@ -20,6 +20,7 @@ const config: Config = {
       },
       fontFamily: {
         gilroyRegular: ["gilroyRegular"],
+        gilroyBlack: ["gilroyBold"],
       },
       colors: {
         lineStopLeft: "rgba(42, 45, 47, 0.4)",
@@ -28,10 +29,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [
-    require("tailwindcss-gradients"),
-    require('tailwind-scrollbar'),
-  ], 
-  
+  plugins: [require("tailwindcss-gradients"), require("tailwind-scrollbar")],
 };
 export default config;

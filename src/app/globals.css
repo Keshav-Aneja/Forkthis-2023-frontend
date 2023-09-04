@@ -6,6 +6,10 @@
   font-family: "gilroyRegular";
   src: url("../../public/fonts/Gilroy-Regular.ttf");
 }
+@font-face {
+  font-family: "gilroyBold";
+  src: url("../../public/fonts/Gilroy-Bold.ttf");
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
