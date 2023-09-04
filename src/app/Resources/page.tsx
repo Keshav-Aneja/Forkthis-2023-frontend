@@ -13,7 +13,7 @@ export default function Resources() {
       <main className="">
         <div className=" w-[100%] z-0 flex ">
           <Sidebarrr />
-          Hi my name is pavban
+          
           
           <div className="w-[9%] bg-black">
 
