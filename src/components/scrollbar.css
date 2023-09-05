@@ -1,0 +1,22 @@
+/* Define the scrollbar width and color */
+/* Note that the 'auto' value for scrollbar-width enables native browser styling */
+
+/* For Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #3C63AD #ECEFF1;
+  }
+  
+  /* For Webkit-based browsers (Chrome, Safari) */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: #3C63AD;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #ECEFF1;
+  }
+  
