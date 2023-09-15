@@ -21,6 +21,7 @@ const config: Config = {
       fontFamily: {
         gilroyRegular: ["gilroyRegular"],
         gilroyBlack: ["gilroyBold"],
+        manrope: ["manrope"],
       },
       colors: {
         lineStopLeft: "rgba(42, 45, 47, 0.4)",

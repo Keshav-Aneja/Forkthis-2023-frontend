@@ -10,6 +10,10 @@
   font-family: "gilroyBold";
   src: url("../../public/fonts/Gilroy-Bold.ttf");
 }
+@font-face {
+  font-family: "manrope";
+  src: url("../../public/fonts/Manrope-Regular.ttf");
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
