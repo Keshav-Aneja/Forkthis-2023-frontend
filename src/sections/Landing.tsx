@@ -3,13 +3,19 @@ import Link from "next/link";
 export default function Landing() {
   return (
     <div className=" w-full overflow-x-hidden">
-      <div className="circle-bg absolute overflow-x-hidden w-full -z-10">
-        <div className="circle w-[150vw] h-[150vw] border-[80px] border-[#4a18bd] rounded-full relative top-[-105vw] left-[-25vw] blur-xl"></div>
-        <div className="circle w-[150vw] h-[150vw] border-[40px] border-[#8A61FF] rounded-full absolute top-[-103vw] left-[-25vw] blur-xl"></div>
+      <div className="circle-bg absolute overflow-hidden w-full h-[100vh] -z-10">
+        <div
+          className="circle w-[200vw] h-[200vw] lg:w-[150vw] lg:h-[150vw] border-[50px] md:border-[80px] border-[#4a18bd] rounded-full relative 
+        top-[-65vw] md:top-[-105vw] left-[-50vw] lg:left-[-25vw] blur-xl"
+        ></div>
+        <div
+          className="circle w-[200vw] h-[200vw] lg:w-[150vw] lg:h-[150vw] border-[25px] md:border-[40px] border-[#8A61FF] rounded-full absolute 
+          top-[-64vw] md:top-[-104vw] left-[-50vw] lg:left-[-25vw] blur-xl"
+        ></div>
       </div>
       <Nav></Nav>
-      <div className="w-full h-[90vh] overflow-x-hidden flex flex-col justify-center items-center gap-10 font-gilroyBlack">
-        <div className="heading text-center text-7xl font-extrabold">
+      <div className="w-full h-[60vh] md:h-[70vh] lg:h-[90vh] overflow-x-hidden flex flex-col justify-start mt-20 md:mt-0 md:justify-center items-center gap-10 font-gilroyBlack">
+        <div className="heading text-center text-3xl md:text-7xl font-extrabold">
           Welcome To ForkThis
         </div>
         <div className="sub-heading text-center italic font-gilroyRegular text-xl font-bold">

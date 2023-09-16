@@ -59,18 +59,23 @@ export default function Sidebarrr() {
           }}
         ></div>
         <div className="w-[90%] badges flex flex-col gap-5 md:flex-row lg:flex-col lg:gap-0 lg:w-[100%] lg:text-xs lg:h-[70%]">
-          <div className="w-full flex justify-between gap-5 items-center md:justify-center md:gap-2 lg:flex-col lg:h-[33.3%]  lg:hover:bg-black  lg:hover:text-sm  duration-300">
-            <Image
-              className="md:w-[1.5rem] lg:w-[2.2rem]"
-              src="/dashboard/awardIcon.png"
-              width={50}
-              height={50}
-              alt="Picture of the author"
-            />
-            <span className="font-gilroyRegular w-[45%] font-bold text-center md:w-full">
-              Leaderboard
-            </span>
-          </div>
+          <Link
+            href="/leaderboard"
+            className="w-full lg:w-full flex justify-center gap-5 items-center md:justify-center md:gap-2 lg:flex-col lg:h-[33.3%]  lg:hover:bg-black  lg:hover:text-sm duration-300"
+          >
+            <div className="w-full flex justify-between gap-5 items-center md:justify-center md:gap-2 lg:flex-col lg:h-[33.3%]  lg:hover:bg-black  lg:hover:text-sm  duration-300">
+              <Image
+                className="md:w-[1.5rem] lg:w-[2.2rem]"
+                src="/dashboard/awardIcon.png"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+              />
+              <span className="font-gilroyRegular w-[45%] font-bold text-center md:w-full">
+                Leaderboard
+              </span>
+            </div>
+          </Link>
           <Link
             href="/dashboard"
             className="w-full lg:w-full flex justify-center gap-5 items-center md:justify-center md:gap-2 lg:flex-col lg:h-[33.3%]  lg:hover:bg-black  lg:hover:text-sm duration-300"

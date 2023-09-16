@@ -42,8 +42,10 @@ const FAQList: React.FC<FAQListProps> = ({ que, ans }) => {
       </div>
       <div
         className={`bottom-panel text-xs md:text-base lg:text-lg mt-2 ${
-          isOpen ? "delayed-opacity mt-2 opacity-100" : "mt-20 opacity-0"
-        }  transition-opacity duration-300 delay-200`}
+          isOpen
+            ? "delayed-opacity mt-2 opacity-100 transition-opacity duration-300 delay-200"
+            : "mt-20 opacity-0"
+        }  `}
       >
         {ans}
       </div>
