@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import FAQ from "@/sections/FAQ"
 export default function Landing() {
 
   return (
@@ -16,7 +16,7 @@ export default function Landing() {
         ></div>
       </div>
       <Nav></Nav>
-      <div className="w-full h-[60vh] md:h-[70vh] lg:h-[90vh] overflow-x-hidden flex flex-col justify-start mt-20 md:mt-0 md:justify-center items-center gap-10 font-gilroyBlack">
+      <div className="w-full h-[60vh] md:h-[70vh] lg:h-[90vh] overflow-x-hidden flex flex-col justify-between mt-20 md:mt-0 md:justify-center items-center gap-10 font-gilroyBlack">
         <div className="heading text-center text-3xl md:text-7xl font-extrabold">
           Welcome To ForkThis
         </div>
@@ -27,6 +27,7 @@ export default function Landing() {
           Sign in with Github
         </Link>
       </div>
+      <FAQ></FAQ>
     </div>
   );
 }
