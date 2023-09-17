@@ -64,8 +64,8 @@ const TimelineComponent = () => {
               <path
                 d="M2 106.005L2 2"
                 stroke="url(#paint0_radial_244_2348)"
-                stroke-width="3"
-                stroke-linecap="round"
+                strokeWidth="3"
+                strokeLinecap="round"
               />
               <defs>
                 <radialGradient
@@ -76,8 +76,8 @@ const TimelineComponent = () => {
                   gradientUnits="userSpaceOnUse"
                   gradientTransform="translate(2.5 54.0024) scale(0.5 52.0024)"
                 >
-                  <stop stop-color="#FFCCDE" />
-                  <stop offset="1" stop-color="#FFCCDE" stop-opacity="0" />
+                  <stop stopColor="#FFCCDE" />
+                  <stop offset="1" stopColor="#FFCCDE" stopOpacity="0" />
                 </radialGradient>
               </defs>
             </svg>
@@ -106,8 +106,8 @@ const TimelineComponent = () => {
                   gradientUnits="userSpaceOnUse"
                   gradientTransform="translate(31.0099 9.5024) rotate(90) scale(0.5 31.0099)"
                 >
-                  <stop stop-color="#FFCCDE" />
-                  <stop offset="1" stop-color="#FFCCDE" stop-opacity="0" />
+                  <stop stopColor="#FFCCDE" />
+                  <stop offset="1" stopColor="#FFCCDE" stopOpacity="0" />
                 </radialGradient>
               </defs>
             </svg>
@@ -198,8 +198,8 @@ const TimelineComponent = () => {
                   gradientUnits="userSpaceOnUse"
                   gradientTransform="translate(31.0099 9.5024) rotate(90) scale(0.5 31.0099)"
                 >
-                  <stop stop-color="#FFCCDE" />
-                  <stop offset="1" stop-color="#FFCCDE" stop-opacity="0" />
+                  <stop stopColor="#FFCCDE" />
+                  <stop offset="1" stopColor="#FFCCDE" stopOpacity="0" />
                 </radialGradient>
               </defs>
             </svg>
@@ -218,8 +218,8 @@ const TimelineComponent = () => {
               <path
                 d="M2 106.005L2 2"
                 stroke="url(#paint0_radial_244_2348)"
-                stroke-width="3"
-                stroke-linecap="round"
+                strokeWidth="3"
+                strokeLinecap="round"
               />
               <defs>
                 <radialGradient
@@ -230,8 +230,8 @@ const TimelineComponent = () => {
                   gradientUnits="userSpaceOnUse"
                   gradientTransform="translate(2.5 54.0024) scale(0.5 52.0024)"
                 >
-                  <stop stop-color="#FFCCDE" />
-                  <stop offset="1" stop-color="#FFCCDE" stop-opacity="0" />
+                  <stop stopColor="#FFCCDE" />
+                  <stop offset="1" stopColor="#FFCCDE" stopOpacity="0" />
                 </radialGradient>
               </defs>
             </svg>
@@ -263,8 +263,8 @@ const TimelineComponent = () => {
               <path
                 d="M2 106.005L2 2"
                 stroke="url(#paint0_radial_244_2348)"
-                stroke-width="3"
-                stroke-linecap="round"
+                strokeWidth="3"
+                strokeLinecap="round"
               />
               <defs>
                 <radialGradient
@@ -275,8 +275,8 @@ const TimelineComponent = () => {
                   gradientUnits="userSpaceOnUse"
                   gradientTransform="translate(2.5 54.0024) scale(0.5 52.0024)"
                 >
-                  <stop stop-color="#FFCCDE" />
-                  <stop offset="1" stop-color="#FFCCDE" stop-opacity="0" />
+                  <stop stopColor="#FFCCDE" />
+                  <stop offset="1" stopColor="#FFCCDE" stopOpacity="0" />
                 </radialGradient>
               </defs>
             </svg>
@@ -305,8 +305,8 @@ const TimelineComponent = () => {
                   gradientUnits="userSpaceOnUse"
                   gradientTransform="translate(31.0099 9.5024) rotate(90) scale(0.5 31.0099)"
                 >
-                  <stop stop-color="#FFCCDE" />
-                  <stop offset="1" stop-color="#FFCCDE" stop-opacity="0" />
+                  <stop stopColor="#FFCCDE" />
+                  <stop offset="1" stopColor="#FFCCDE" stopOpacity="0" />
                 </radialGradient>
               </defs>
             </svg>
@@ -397,8 +397,8 @@ const TimelineComponent = () => {
                   gradientUnits="userSpaceOnUse"
                   gradientTransform="translate(31.0099 9.5024) rotate(90) scale(0.5 31.0099)"
                 >
-                  <stop stop-color="#FFCCDE" />
-                  <stop offset="1" stop-color="#FFCCDE" stop-opacity="0" />
+                  <stop stopColor="#FFCCDE" />
+                  <stop offset="1" stopColor="#FFCCDE" stopOpacity="0" />
                 </radialGradient>
               </defs>
             </svg>
@@ -417,8 +417,8 @@ const TimelineComponent = () => {
               <path
                 d="M2 106.005L2 2"
                 stroke="url(#paint0_radial_244_2348)"
-                stroke-width="3"
-                stroke-linecap="round"
+                strokeWidth="3"
+                strokeLinecap="round"
               />
               <defs>
                 <radialGradient
@@ -429,8 +429,8 @@ const TimelineComponent = () => {
                   gradientUnits="userSpaceOnUse"
                   gradientTransform="translate(2.5 54.0024) scale(0.5 52.0024)"
                 >
-                  <stop stop-color="#FFCCDE" />
-                  <stop offset="1" stop-color="#FFCCDE" stop-opacity="0" />
+                  <stop stopColor="#FFCCDE" />
+                  <stop offset="1" stopColor="#FFCCDE" stopOpacity="0" />
                 </radialGradient>
               </defs>
             </svg>
@@ -462,8 +462,8 @@ const TimelineComponent = () => {
               <path
                 d="M2 106.005L2 2"
                 stroke="url(#paint0_radial_244_2348)"
-                stroke-width="3"
-                stroke-linecap="round"
+                strokeWidth="3"
+                strokeLinecap="round"
               />
               <defs>
                 <radialGradient
@@ -474,8 +474,8 @@ const TimelineComponent = () => {
                   gradientUnits="userSpaceOnUse"
                   gradientTransform="translate(2.5 54.0024) scale(0.5 52.0024)"
                 >
-                  <stop stop-color="#FFCCDE" />
-                  <stop offset="1" stop-color="#FFCCDE" stop-opacity="0" />
+                  <stop stopColor="#FFCCDE" />
+                  <stop offset="1" stopColor="#FFCCDE" stopOpacity="0" />
                 </radialGradient>
               </defs>
             </svg>
@@ -504,8 +504,8 @@ const TimelineComponent = () => {
                   gradientUnits="userSpaceOnUse"
                   gradientTransform="translate(31.0099 9.5024) rotate(90) scale(0.5 31.0099)"
                 >
-                  <stop stop-color="#FFCCDE" />
-                  <stop offset="1" stop-color="#FFCCDE" stop-opacity="0" />
+                  <stop stopColor="#FFCCDE" />
+                  <stop offset="1" stopColor="#FFCCDE" stopOpacity="0" />
                 </radialGradient>
               </defs>
             </svg>

@@ -1,8 +1,11 @@
+'use client'
+
 import CountdownTimer from "@/components/CountdownTimer";
 import ProgressCircular from "../components/ProgressCircular";
-
+import axios from 'axios';
 export default function DashboardInfo() {
   const targetDate = new Date("2023-08-31T23:59:59");
+  
 
   return (
     <div>
