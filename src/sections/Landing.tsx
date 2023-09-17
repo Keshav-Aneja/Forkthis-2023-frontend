@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+
 export default function Landing() {
+
   return (
     <div className=" w-full overflow-x-hidden">
       <div className="circle-bg absolute overflow-hidden w-full h-[100vh] -z-10">
@@ -21,9 +23,9 @@ export default function Landing() {
         <div className="sub-heading text-center italic font-gilroyRegular text-xl font-bold">
           Git.Set.Fork!
         </div>
-        <div className="reg-button py-2 px-12 text-black bg-[#8A61FF] text-xl  rounded-xl font-bolder hover:text-[#af99ed] cursor-pointer hover:bg-[#4a18bd] transition-all duration-300">
-          Register
-        </div>
+        <Link href="http://localhost:3001/auth/github" className="reg-button py-2 px-12 text-black bg-[#8A61FF] text-xl  rounded-xl font-bolder hover:text-[#af99ed] cursor-pointer hover:bg-[#4a18bd] transition-all duration-300">
+          Sign in with Github
+        </Link>
       </div>
     </div>
   );
