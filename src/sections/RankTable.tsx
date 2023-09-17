@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 const rankers = [
   {
     rank: 1,
@@ -125,29 +126,188 @@ const rankers = [
     name: "Grace Thompson",
     points: 260,
   },
+  {
+    rank: 26,
+    name: "Aiden Robinson",
+    points: 250,
+  },
+  {
+    rank: 27,
+    name: "Zoe White",
+    points: 240,
+  },
+  {
+    rank: 28,
+    name: "Carter Hall",
+    points: 230,
+  },
+  {
+    rank: 29,
+    name: "Layla Scott",
+    points: 220,
+  },
+  {
+    rank: 30,
+    name: "Jackson Green",
+    points: 210,
+  },
+  {
+    rank: 31,
+    name: "Chloe King",
+    points: 200,
+  },
+  {
+    rank: 32,
+    name: "Logan Turner",
+    points: 190,
+  },
+  {
+    rank: 33,
+    name: "Avery Parker",
+    points: 180,
+  },
+  {
+    rank: 34,
+    name: "Ethan Murphy",
+    points: 170,
+  },
+  {
+    rank: 35,
+    name: "Hannah Adams",
+    points: 160,
+  },
+  {
+    rank: 36,
+    name: "Mason Lewis",
+    points: 150,
+  },
+  {
+    rank: 37,
+    name: "Lily Martin",
+    points: 140,
+  },
+  {
+    rank: 38,
+    name: "Owen Hill",
+    points: 130,
+  },
+  {
+    rank: 39,
+    name: "Aria Baker",
+    points: 120,
+  },
+  {
+    rank: 40,
+    name: "William Scott",
+    points: 110,
+  },
+  {
+    rank: 41,
+    name: "Sofia Allen",
+    points: 100,
+  },
+  {
+    rank: 42,
+    name: "Elijah Brown",
+    points: 90,
+  },
+  {
+    rank: 43,
+    name: "Scarlett Mitchell",
+    points: 80,
+  },
+  {
+    rank: 44,
+    name: "Henry Turner",
+    points: 70,
+  },
+  {
+    rank: 45,
+    name: "Grace Murphy",
+    points: 60,
+  },
+  {
+    rank: 46,
+    name: "Liam Foster",
+    points: 50,
+  },
+  {
+    rank: 47,
+    name: "Emma Cooper",
+    points: 40,
+  },
+  {
+    rank: 48,
+    name: "Mia Parker",
+    points: 30,
+  },
+  {
+    rank: 49,
+    name: "Aiden Harris",
+    points: 20,
+  },
+  {
+    rank: 50,
+    name: "Ella Wright",
+    points: 10,
+  },
 ];
 
 export default function RankTable() {
+  const [currPage, setPage] = useState(0);
+  let maxPage = Math.ceil(rankers.length / 20);
   return (
-    <div className="rank-table w-full min-h-[50vh] mt-6 rounded-3xl border-2 border-gray-700">
-      <table className="w-full">
-        <tr className="font-gilroyBlack tracking-wide text-xl text-center border-b-2 border-gray-700 h-14">
-          <td>Rank</td>
-          <td>Username</td>
-          <td>Points</td>
-        </tr>
-        {rankers.map((data, i) => {
-          return (
-            <RankListItem
-              rank={data.rank}
-              name={data.name}
-              points={data.points}
-              key={i}
-            />
-          );
-        })}
-      </table>
-    </div>
+    <>
+      <div className="rank-table w-full min-h-[50vh] mt-6 rounded-3xl border-2 border-gray-700">
+        <table className="w-full">
+          <tr className="font-gilroyBlack tracking-wide text-xl text-center border-b-2 border-gray-700 h-14">
+            <td>Rank</td>
+            <td>Username</td>
+            <td>Points</td>
+          </tr>
+          {rankers.map((data, i) => {
+            if (i >= currPage * 20 && i < currPage * 20 + 20) {
+              return (
+                <RankListItem
+                  rank={data.rank}
+                  name={data.name}
+                  points={data.points}
+                  key={i}
+                />
+              );
+            }
+          })}
+        </table>
+      </div>
+      <div
+        className={`buttons w-full flex ${
+          currPage === 0 ? "justify-end" : "justify-between"
+        } gap-4 mt-4 md:justify-end`}
+      >
+        <div
+          className={`px-6 py-2 bg-[#8A61FF] rounded-xl text-black font-gilroyBlack text-lg hover:bg-[#4a18bd] cursor-pointer hover:text-[#af99ed] ${
+            currPage < 1 ? "hidden" : "block"
+          }`}
+          onClick={() =>
+            setPage((page) => (currPage > 0 ? currPage - 1 : currPage))
+          }
+        >
+          Previous
+        </div>
+        <div
+          className={`px-6 py-2 bg-[#8A61FF] rounded-xl text-black font-gilroyBlack text-lg hover:bg-[#4a18bd] cursor-pointer hover:text-[#af99ed] ${
+            currPage === maxPage - 1 ? "hidden" : "block"
+          } `}
+          onClick={() =>
+            setPage((page) =>
+              currPage < maxPage - 1 ? currPage + 1 : currPage
+            )
+          }
+        >
+          Next
+        </div>
+      </div>
+    </>
   );
 }
 
@@ -161,7 +321,7 @@ function RankListItem({
   points: number;
 }) {
   return (
-    <tr className="text-center text-gray-400 border-b-2 border-gray-700 h-10 font-gilroyRegular">
+    <tr className="text-center text-gray-400 border-t-2 border-gray-700 h-10 font-gilroyRegular">
       <td>{rank}.</td>
       <td>{name}</td>
       <td>{points}</td>
