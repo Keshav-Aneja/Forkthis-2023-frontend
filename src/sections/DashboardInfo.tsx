@@ -1,11 +1,10 @@
-'use client'
+"use client";
 
 import CountdownTimer from "@/components/CountdownTimer";
 import ProgressCircular from "../components/ProgressCircular";
-import axios from 'axios';
+import axios from "axios";
 export default function DashboardInfo() {
-  const targetDate = new Date("2023-08-31T23:59:59");
-  
+  const targetDate = new Date("2023-09-24T23:59:59");
 
   return (
     <div>
@@ -13,7 +12,7 @@ export default function DashboardInfo() {
         Dashboard
       </div>
       <div className="flex w-[100%] bg-opacity-30 px-3 py-5 flex-col items-center justify-center md:flex-row md:justify-between md:items-start gap-10 md:gap-0">
-        <div className="ml-0 px-2 py-2 flex flex-col justify-between items-center md:ml-10">
+        <div className="ml-0 px-2 py-2 flex flex-col justify-between items-center md:ml-10 w-[22%] min-w-fit">
           <div className="mb-12 text-2xl font-bold font-gilroyRegular text-center">
             Time Left
           </div>

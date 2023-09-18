@@ -35,7 +35,7 @@ export default function Sidebarrr() {
       >
         {" "}
         <Link
-          href="/landing"
+          href="/"
           className="w-full md:w-[30%] lg:w-full flex justify-center gap-5 items-center md:justify-center md:gap-2 lg:flex-col lg:h-[33.3%]  lg:hover:bg-black  lg:hover:text-sm duration-300"
         >
           <div className="home w-[90%] flex justify-between gap-5 items-center md:justify-center md:w-max md:gap-2 lg:flex-col lg:py-12 lg:gap-3 lg:w-[100%] lg:h-[30%] lg:hover:bg-black lg:px-5  lg:hover:text-sm duration-300">

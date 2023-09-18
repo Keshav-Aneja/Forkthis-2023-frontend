@@ -33,10 +33,16 @@ const CollapseCard: React.FC<RepoDetails> = ({
 
   return (
     <section className="bg-[#000] flex justify-around items-center py-[5px] flex-col border-gradientA font-gilroyRegular border-[#212426] border-b-[0.5px] w-full">
-      <section className="bg-[#000] flex justify-between items-center py-[5px] px-8 w-full">
+      <section
+        className="bg-[#000] flex justify-between items-center py-[5px] px-8 w-full cursor-pointer"
+        onClick={() => {
+          setIsCollapsed(!isCollapsed);
+          rotateImage();
+        }}
+      >
         <section className="bg-[#000] flex justify-between items-center py-[5px] px-8 w-full ">
           <p>{srNo}</p>
-          <h1 >{repoName}</h1>
+          <h1>{repoName}</h1>
           <h3 className="sm:hidden md:block">{techStack}</h3>
           <p>{issues}</p>
 
@@ -79,7 +85,7 @@ const CollapseCard: React.FC<RepoDetails> = ({
                   className="bg-[#000] border-y-8 border-[#000]"
                 >
                   <td className="text-center">{issue.srNo}</td>
-                  <td className="text-center">{(issue.description)}</td>
+                  <td className="text-center">{issue.description}</td>
                   <td className="text-center">{issue.difficulty}</td>
                   <td className="text-center">{issue.points}</td>
                 </tr>
@@ -87,14 +93,7 @@ const CollapseCard: React.FC<RepoDetails> = ({
             </tbody>
           </table>
           <span className="w-[2px] h-[100%] bg-gradient-to-r from-lineStopLeft via-lineStopMiddle to-lineStopRight transform"></span>
-          <div>
-            <ProgressCircular
-              name="manas"
-              currVal={20}
-              totalVal={100}
-              color="#ffffff"
-            />
-          </div>
+          <div></div>
         </section>
         <div className="w-full h-[2px] bg-gradient-to-r from-lineStopLeft via-lineStopMiddle to-lineStopRight"></div>
       </Collapse>
