@@ -32,8 +32,8 @@ const PointCard: React.FC<cardDetails> = ({
       ></div>
       <ProgressCircular
         name={"personal_score"}
-        currVal={200}
-        totalVal={600}
+        currVal={scoredPoints}
+        totalVal={totalPoints}
         color={"#7C4BC8"}
       />
     </div>

@@ -3,9 +3,35 @@
 import CountdownTimer from "@/components/CountdownTimer";
 import ProgressCircular from "../components/ProgressCircular";
 import axios from "axios";
+import {useEffect, useState} from 'react';
+import Cookie from 'js-cookie';
+import { toast } from "react-toastify";
+
 export default function DashboardInfo() {
   const targetDate = new Date("2023-09-24T23:59:59");
+  const [score, setScore] = useState(0);
+  const [issuesClosed, setIssuesClosed] = useState(0);
 
+  useEffect(() => {
+    const getScore = async () => {
+      try{
+        const token = Cookie.get("token");
+        const response = await axios.get(`http://localhost:3001/user`,
+        {
+          headers: {
+            "Authorization": `${token}`
+          }
+        });
+        setScore(response.data.score);
+        setIssuesClosed(response.data.noOfIssuesSolved);
+      }
+      catch(err:any){
+        toast.error(err,{theme:"dark"});
+      }
+    }
+    getScore();
+  }, [])
+  
   return (
     <div>
       <div className="flex py-5 mb-12 mt-20 justify-center items-center font-gilroyRegular text-5xl font-black lg:mt-0 lg:mb-10">
@@ -24,7 +50,7 @@ export default function DashboardInfo() {
           </div>
           <ProgressCircular
             name={"pointsScored"}
-            currVal={400}
+            currVal={score}
             totalVal={600}
             color={"#7C4BC8"}
           />
@@ -35,7 +61,7 @@ export default function DashboardInfo() {
           </div>
           <ProgressCircular
             name={"issuesClosed"}
-            currVal={7}
+            currVal={issuesClosed}
             totalVal={16}
             color={"#22A385"}
           />
