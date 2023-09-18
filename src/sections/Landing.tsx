@@ -91,7 +91,7 @@ function Nav() {
           </Link>
         </div>
         <div className="right hidden md:flex gap-8 items-center font-gilroyBlack text-xl">
-          <div className="register-btn py-2 px-6 bg-[#8A61FF] rounded-full text-black cursor-pointer hover:text-[#af99ed] hover:bg-[#4a18bd] transition-all duration-300">
+          <div className="register-btn py-2 px-6 bg-transparent text-[#af99ed] border-[#af99ed] border-2 rounded-full cursor-pointer hover:text-[#af99ed] hover:bg-[#4a18bd] hover:border-[#4a18bd]  transition-all duration-300">
             Resources
           </div>
         </div>

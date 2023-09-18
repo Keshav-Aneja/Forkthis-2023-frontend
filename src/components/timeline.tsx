@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { Oswald, Manrope } from "next/font/google";
 import Image from "next/image";
@@ -27,12 +27,12 @@ const TimelineComponent = () => {
     <>
       <div className="m-auto flex h-max flex-col justify-center text-white  lg:w-1/2">
         <div
-          className={`text-timelineheader text-center text-3xl font-extrabold text-[#FFF6E8] md:text-5xl lg:h-12 ${oswald.className}`}
+          className={`text-timelineheader text-center text-3xl font-extrabold text-[#FFF6E8] md:text-5xl lg:h-12 font-gilroyBlack`}
         >
           Timeline for ForkThis
         </div>
         <div
-          className={`mt-4 text-center text-2xl font-bold text-[#FFCCDE] md:text-3xl ${oswald.className}`}
+          className={`mt-4 text-center text-2xl font-bold text-[#8A61FF] md:text-3xl  font-gilroyBlack`}
         >
           SAVE YOUR DATES!
         </div>
@@ -123,7 +123,7 @@ const TimelineComponent = () => {
             variants={cardVariants}
             className="h-full w-full p-2 md:pl-16"
           >
-            <h1 className="text-bold py-2 text-left text-2xl font-bold text-[#A7A9BE]">
+            <h1 className="text-bold py-2 text-left text-2xl font-bold text-[#af99ed]">
               OPENING CEREMONY
             </h1>
             <div className="flex flex-col sm:flex-row sm:items-center">
@@ -151,7 +151,7 @@ const TimelineComponent = () => {
             variants={cardVariants}
             className="h-full w-full p-2 md:pl-4 md:pr-16"
           >
-            <h1 className="text-bold py-2 text-left text-2xl font-bold text-[#A7A9BE]">
+            <h1 className="text-bold py-2 text-left text-2xl font-bold text-[#af99ed]">
               TEACHING GIT BASICS
             </h1>
             <div className="flex flex-col sm:flex-row sm:items-center">
@@ -322,7 +322,7 @@ const TimelineComponent = () => {
             variants={cardVariants}
             className="h-full w-full p-2 md:pl-16"
           >
-            <h1 className="text-bold py-2 text-left text-2xl font-bold text-[#A7A9BE]">
+            <h1 className="text-bold py-2 text-left text-2xl font-bold text-[#af99ed]">
               SPEAKER SESSION
             </h1>
             <div className="flex flex-col sm:flex-row sm:items-center">
@@ -350,7 +350,7 @@ const TimelineComponent = () => {
             variants={cardVariants}
             className="h-full w-full p-2 md:pl-4 md:pr-16"
           >
-            <h1 className="text-bold py-2 text-left text-2xl font-bold text-[#A7A9BE]">
+            <h1 className="text-bold py-2 text-left text-2xl font-bold text-[#af99ed]">
               INTRODUCTION TO GAME
             </h1>
             <div className="flex flex-col sm:flex-row sm:items-center">
@@ -521,7 +521,7 @@ const TimelineComponent = () => {
             variants={cardVariants}
             className="h-full w-full p-2 md:pl-16"
           >
-            <h1 className="text-bold py-2 text-left text-2xl font-bold text-[#A7A9BE]">
+            <h1 className="text-bold py-2 text-left text-2xl font-bold text-[#af99ed] uppercase">
               Online competition
             </h1>
             <div className="flex flex-col sm:flex-row sm:items-center">
@@ -539,7 +539,6 @@ const TimelineComponent = () => {
             </p>
           </motion.div>
         </motion.div>
-        
       </div>
     </>
   );
