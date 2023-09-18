@@ -137,7 +137,7 @@ const TimelineComponent = () => {
             </div>
 
             <p className="pt-5 text-left text-xs font-medium text-[#E8E8EE] sm:text-base">
-              Welcome to ForkThis.
+              Kickstarting Forkthis with a bang, setting the stage for Git.Set.Fork!
             </p>
           </motion.div>
         </motion.div>
@@ -164,7 +164,7 @@ const TimelineComponent = () => {
               </p>
             </div>
             <p className="pt-5 text-left text-xs font-medium text-[#E8E8EE] sm:text-base">
-              Learn git
+              Master the art of branching, committing, and merging in a hands-on workshop.
             </p>
           </motion.div>
         </motion.div>
@@ -336,7 +336,7 @@ const TimelineComponent = () => {
             </div>
 
             <p className="pt-5 text-left text-xs font-medium text-[#E8E8EE] sm:text-base">
-              SPeaker something something
+              Get inspired as industry experts share their Git journey and insights.
             </p>
           </motion.div>
         </motion.div>
@@ -363,7 +363,7 @@ const TimelineComponent = () => {
               </p>
             </div>
             <p className="pt-5 text-left text-xs font-medium text-[#E8E8EE] sm:text-base">
-              Something something
+            Dive into the world of Git gamification, where learning meets fun.
             </p>
           </motion.div>
         </motion.div>
@@ -535,7 +535,7 @@ const TimelineComponent = () => {
             </div>
 
             <p className="pt-5 text-left text-xs font-medium text-[#E8E8EE] sm:text-base">
-              Is your coding gsomething something
+              Compete head-to-head in Git challenges, proving your skills in real-time.
             </p>
           </motion.div>
         </motion.div>
