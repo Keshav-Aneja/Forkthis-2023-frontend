@@ -2,8 +2,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import FAQ from "@/sections/FAQ";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import SmoothScroll from "@/helpers/smoothScroll";
+import { useRouter } from "next/navigation";
+import Cookie from 'js-cookie';
+import { toast } from "react-toastify";
 export default function Landing() {
+  const [isSignedin, setIsSignedin] = useState(false);
+  useEffect(() => {
+    if(Cookie.get('token')){
+      setIsSignedin(true);
+    }
+  },[])
+
   return (
     <div className=" w-full overflow-x-hidden">
       <div className="circle-bg absolute overflow-hidden w-full h-[100vh] md:h-[120vh] lg:h-[100vh] -z-10 md:top-[-30vh] lg:top-[20vh]">
@@ -24,12 +35,21 @@ export default function Landing() {
         <div className="sub-heading text-center italic font-gilroyRegular text-xl font-bold">
           Git.Set.Fork!
         </div>
-        <Link
-          href={`https://forkthis-backend.csivit.com/auth/github`}
-          className="reg-button py-2 px-12 text-black bg-[#8A61FF] text-xl  rounded-xl font-bolder hover:text-[#af99ed] cursor-pointer hover:bg-[#4a18bd] transition-all duration-300"
-        >
-          Sign in with Github
-        </Link>
+        {isSignedin ? (
+          <Link
+            href="/dashboard"
+            className="reg-button py-2 px-12 text-black bg-[#8A61FF] text-xl  rounded-xl font-bolder hover:text-[#af99ed] cursor-pointer hover:bg-[#4a18bd] transition-all duration-300"
+          >
+            View Dashboard
+          </Link>
+        ) : (
+          <Link
+            href={`https://forkthis-backend.csivit.com/auth/github`}
+            className="reg-button py-2  px-12 text-black bg-[#8A61FF] text-2xl rounded-full font-bolder hover:text-[#af99ed] cursor-pointer hover:bg-[#4a18bd] transition-all duration-300"
+          >
+            Sign in with Github
+          </Link>
+        )}
       </div>
       <FAQ></FAQ>
     </div>
@@ -37,6 +57,22 @@ export default function Landing() {
 }
 function Nav() {
   const [isOpen, setIsOpen] = useState(true);
+  const router = useRouter();
+  const dashboardClick = () => {
+    if(Cookie.get('token')){
+      router.push('/dashboard');
+      return;
+    }
+    toast.error("Kindly sign in with Github first", {theme:"dark"})
+  }
+  const leaderboardClick = () => {
+    if(Cookie.get('token')){
+      router.push('/leaderboard');
+      return;
+    }
+    toast.error("Kindly sign in with Github first", {theme:"dark"})
+  }
+
   return (
     <div className="ham-icon w-full h-20 flex justify-center absolute top-0 left-0 z-120">
       <div
@@ -57,8 +93,8 @@ function Nav() {
         <Image
           width={50}
           height={50}
-          alt="arrowButton"
-          src="/images/forkthis-logo.svg"
+          alt=""
+          src="/images/forkthis.svg?v=3"
           style={{
             width: "60px",
             height: "60px",
@@ -76,24 +112,24 @@ function Nav() {
             width={50}
             height={50}
             alt="arrowButton"
-            src="/images/forkthis-logo.svg"
+            src="/images/forkthis.svg"
             style={{
               width: "60px",
               height: "60px",
             }}
             className="hidden md:block duration-300 transition-all"
           />
-          <Link href="">About</Link>
-          <Link href="/dashboard">Dashboard</Link>
-          <Link href="/leaderboard">Leaderboard</Link>
-          <Link href="/resources" className="md:hidden">
+          <SmoothScroll target="#footer" className="hover:text-[#8A61FF] hover:underline transition-colors duration-500">About</SmoothScroll>
+          <button onClick = {dashboardClick} className="hover:text-[#8A61FF] hover:underline transition-colors duration-500">Dashboard</button>
+          <button onClick={leaderboardClick} className="hover:text-[#8A61FF] hover:underline transition-colors duration-500">Leaderboard</button>
+          <Link href="/resources" className="md:hidden" >
             Resources
           </Link>
         </div>
         <div className="right hidden md:flex gap-8 items-center font-gilroyBlack text-xl">
-          <div className="register-btn py-2 px-6 bg-transparent text-[#af99ed] border-[#af99ed] border-2 rounded-full cursor-pointer hover:text-[#af99ed] hover:bg-[#4a18bd] hover:border-[#4a18bd]  transition-all duration-300">
+          <Link href = "/resources" className="register-btn py-2 px-6 bg-transparent text-[#af99ed] border-[#af99ed] border-2 rounded-full crursor-pointer hover:text-[#af99ed] hover:bg-[#4a18bd] hover:border-[#4a18bd]  transition-all duration-300">
             Resources
-          </div>
+          </Link>
         </div>
       </div>
     </div>
