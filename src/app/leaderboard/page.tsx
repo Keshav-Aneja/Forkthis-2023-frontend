@@ -30,12 +30,13 @@ export default function Page() {
   const [third, setThird] = useState<LeaderboardDisplay>({username: "", score: 0});
   const [rank, setRank] = useState<number>(0);
   const [score, setScore] = useState<number>(0);
-  const token = Cookie.get("token");
-  if(!token){
+  
+  useEffect(() => {
+    const token = Cookie.get("token");
+    if(!token){
     router.push("/");
     toast.error("Kindly sign in with Github", {theme:"dark"});
-  }
-  useEffect(() => {
+    }
     const fetchData = async () => {
       try{        const userdata = await axios.get(`https://forkthis-backend.csivit.com/user`, {
           headers: {
