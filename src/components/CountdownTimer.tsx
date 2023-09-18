@@ -39,22 +39,24 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
     <div className="flex-auto font-gilroyRegular ">
       {/* <div className="mb-12 text-2xl font-bold">Time left</div> */}
 
-      <div className=" flex mt-4  text-5xl font-black">
-        <p className="">{formatWithLeadingZero(days)}</p>
-        <p className="ml-1 mr-1">:</p>
-        <p className="">{formatWithLeadingZero(hours)}</p>
-        <p className="ml-1 mr-1">:</p>
-        <p className="">{formatWithLeadingZero(minutes)}</p>
-        <p className="ml-1 mr-1">:</p>
-        <p className="">{formatWithLeadingZero(seconds)}</p>
+      <div className="w-[100%]">
+        <div className=" flex mt-4  text-5xl font-black justify-between">
+          <p className="">{formatWithLeadingZero(days)}</p>
+          <p className="ml-1 mr-1">:</p>
+          <p className="">{formatWithLeadingZero(hours)}</p>
+          <p className="ml-1 mr-1">:</p>
+          <p className="">{formatWithLeadingZero(minutes)}</p>
+          <p className="ml-1 mr-1">:</p>
+          <p className="">{formatWithLeadingZero(seconds)}</p>
+        </div>
+        <div className="flex font-extrabold text-s justify-between">
+          <p className="mr-8">Days</p>
+          <p className="mr-4">Hours</p>
+          <p className="mr-2">Minutes</p>
+          <p>Seconds</p>
+        </div>
       </div>
-      <div className="flex font-extrabold text-s">
-        <p className="ml-2 mr-4">Days</p>
-        <p className="ml-6 mr-3">Hours</p>
-        <p className="ml-2 mr-3">Minutes</p>
-        <p>Seconds</p>
-      </div>
-      <div className="mt-1 text-[#C2C2C2] text-opacity-70 text-lg font-bold ">
+      <div className="mt-1 text-[#C2C2C2] text-opacity-70 text-lg font-bold text-center">
         Until Competition Ends
       </div>
     </div>
