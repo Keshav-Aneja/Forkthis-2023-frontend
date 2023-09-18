@@ -18,10 +18,9 @@ export default function RankTable() {
   let maxPage = Math.ceil(leaderboarddata.length / 20);
 
   useEffect(() => {
-    console.log(`${process.env.BACKEND_URL}`)
     const fetchData = async () => {
       try{
-        const res = await axios.get(`http://localhost:3001/leaderboard?limit=20&page=${currPage}`);
+        const res = await axios.get(`https://forkthis-backend.csivit.com/leaderboard?limit=20&page=${currPage}`);
         const data:LeaderboardData[] = res.data.data;
         setLeaderboardData(data);
       }

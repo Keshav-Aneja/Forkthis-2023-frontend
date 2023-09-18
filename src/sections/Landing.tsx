@@ -25,7 +25,7 @@ export default function Landing() {
           Git.Set.Fork!
         </div>
         <Link
-          href="http://localhost:3001/auth/github"
+          href={`https://forkthis-backend.csivit.com/auth/github`}
           className="reg-button py-2 px-12 text-black bg-[#8A61FF] text-xl  rounded-xl font-bolder hover:text-[#af99ed] cursor-pointer hover:bg-[#4a18bd] transition-all duration-300"
         >
           Sign in with Github
