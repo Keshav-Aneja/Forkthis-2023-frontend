@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function Landing() {
   return (
     <div className=" w-full overflow-x-hidden">
-      <div className="circle-bg absolute overflow-hidden w-full h-[100vh] -z-10">
+      <div className="circle-bg absolute overflow-hidden w-full h-[100vh] md:h-[120vh] lg:h-[100vh] -z-10 md:top-[-30vh] lg:top-[20vh]">
         <div
           className="circle w-[200vw] h-[200vw] lg:w-[150vw] lg:h-[150vw] border-[50px] md:border-[80px] border-[#4a18bd] rounded-full relative 
         top-[-65vw] md:top-[-105vw] left-[-50vw] lg:left-[-25vw] blur-xl"
@@ -17,7 +17,7 @@ export default function Landing() {
         ></div>
       </div>
       <Nav></Nav>
-      <div className="w-full h-[60vh] md:h-[70vh] lg:h-[90vh] overflow-x-hidden flex flex-col justify-start mt-44 md:mt-0 md:justify-center items-center gap-10 font-gilroyBlack">
+      <div className="w-full h-[60vh] md:h-[70vh] lg:h-[110vh] overflow-x-hidden flex flex-col justify-start mt-44 md:mt-0 md:justify-center items-center gap-10 font-gilroyBlack">
         <div className="heading text-center text-3xl md:text-7xl font-extrabold">
           Welcome To ForkThis
         </div>
