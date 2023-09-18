@@ -37,14 +37,14 @@ export default function Page() {
   }
   useEffect(() => {
     const fetchData = async () => {
-      try{        const userdata = await axios.get(`http://localhost:3001/user`, {
+      try{        const userdata = await axios.get(`https://forkthis-backend.csivit.com/user`, {
           headers: {
             "Authorization": `${token}`
           }
         });
         setScore(userdata.data.score);
         setRank(userdata.data.rank)
-        const res = await axios.get(`http://localhost:3001/leaderboard`);
+        const res = await axios.get(`https://forkthis-backend.csivit.com/leaderboard`);
         const data:LeaderboardData[] = res.data.data;
         setFirst({username: data[0].githubUsername, score: data[0].score});
         setSecond({username: data[1].githubUsername, score: data[1].score});

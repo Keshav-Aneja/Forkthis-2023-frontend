@@ -16,7 +16,7 @@ export default function DashboardInfo() {
     const getScore = async () => {
       try{
         const token = Cookie.get("token");
-        const response = await axios.get(`http://localhost:3001/user`,
+        const response = await axios.get(`https://forkthis-backend.csivit.com/user`,
         {
           headers: {
             "Authorization": `${token}`
