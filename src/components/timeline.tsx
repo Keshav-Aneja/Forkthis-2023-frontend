@@ -164,7 +164,7 @@ const TimelineComponent = () => {
               </p>
             </div>
             <p className="pt-5 text-left text-xs font-medium text-[#E8E8EE] sm:text-base">
-              Master the art of branching, committing, and merging in a hands-on workshop.
+              Master the art of branching, committing, and merging in a hands-on open source workshop.
             </p>
           </motion.div>
         </motion.div>
