@@ -10,7 +10,7 @@ const Leaderboard: React.FC<rankings> = ({ rankHolders, rankScores }) => {
       <div className="first py-2 md:w-full lg:h-full lg:self-end order-2 lg:order-1">
         <div className="container py-2 flex flex-col justify-center items-center md:px-4 md:flex-row md:justify-between lg:h-full lg:flex-col lg:justify-center lg:items-center lg:gap-4">
           <Image
-            src="/images/gold-medal.png"
+            src="/images/silver.png"
             alt="medal"
             width={100}
             height={100}
@@ -30,7 +30,7 @@ const Leaderboard: React.FC<rankings> = ({ rankHolders, rankScores }) => {
       <div className="first py-2 md:w-full lg:h-full lg:self-start order-1 lg:order-2">
         <div className="container py-2 flex flex-col justify-center items-center md:px-4 md:flex-row md:justify-between lg:h-full lg:flex-col lg:justify-center lg:items-center lg:gap-4">
           <Image
-            src="/images/gold-medal.png"
+            src="/images/gold.png"
             alt="medal"
             width={100}
             height={100}
@@ -50,7 +50,7 @@ const Leaderboard: React.FC<rankings> = ({ rankHolders, rankScores }) => {
       <div className="first py-2 md:w-full lg:h-full lg:self-end order-3 lg:order-3">
         <div className="container py-2 flex flex-col justify-center items-center md:px-4 md:flex-row md:justify-between lg:h-full lg:flex-col lg:justify-center lg:items-center lg:gap-4">
           <Image
-            src="/images/gold-medal.png"
+            src="/images/bronze.png"
             alt="medal"
             width={100}
             height={100}

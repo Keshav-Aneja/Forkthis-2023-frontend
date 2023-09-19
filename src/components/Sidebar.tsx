@@ -6,7 +6,7 @@ import Link from "next/link";
 // import Resources from "../app/resources/page";
 import Image from "next/image";
 export default function Sidebarrr() {
-  const [menuOpened, setMenuOpened] = useState(true);
+  const [menuOpened, setMenuOpened] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpened((prevMenuOpened) => !prevMenuOpened);
@@ -82,8 +82,8 @@ export default function Sidebarrr() {
           >
             <div className="w-full flex justify-between gap-5 items-center md:justify-center md:gap-2 lg:flex-col lg:h-[33.3%]  lg:hover:bg-black  lg:hover:text-sm  duration-300">
               <Image
-                className="md:w-[1.5rem] lg:w-[2.2rem]"
-                src="/dashboard/awardIcon.png"
+                className="md:w-[1.2rem] lg:w-[2.2rem] md:ml-2 lg:ml-0"
+                src="/images/dashboard.png"
                 width={50}
                 height={50}
                 alt="Picture of the author"
@@ -98,8 +98,8 @@ export default function Sidebarrr() {
             className="w-full flex justify-between gap-5 items-center md:justify-center md:gap-2 lg:flex-col lg:h-[33.3%]  lg:hover:bg-black  lg:hover:text-sm duration-300"
           >
             <Image
-              className="md:w-[1.5rem] lg:w-[2.2rem]"
-              src="/dashboard/awardIcon.png"
+              className="md:w-[1.5rem] lg:w-[2.5rem]"
+              src="/images/education.png"
               width={50}
               height={50}
               alt="Picture not shown"
@@ -107,6 +107,22 @@ export default function Sidebarrr() {
 
             <span className="font-gilroyRegular font-bold w-[45%] md:w-full text-center">
               Resources
+            </span>
+          </Link>
+          <Link
+            href="/resources"
+            className="w-full flex justify-between gap-5 items-center md:justify-center md:gap-2 lg:flex-col lg:h-[33.3%]  lg:hover:bg-black  lg:hover:text-sm duration-300"
+          >
+            <Image
+              className="md:w-[1.2rem] lg:w-[2.0rem]"
+              src="/images/logout.png"
+              width={50}
+              height={50}
+              alt="Picture not shown"
+            />
+
+            <span className="font-gilroyRegular font-bold w-[45%] md:w-full text-center">
+              Logout
             </span>
           </Link>
         </div>
