@@ -9,25 +9,21 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'ForkThis 2023',
   description: "Join Forkthis, the ultimate Git and GitHub experience! Learn, collaborate, and compete in this action-packed event designed for Git enthusiasts.",
-  keywords: [
-    "Forkthis",
-    "Git.Set.Fork",
-    "Git",
-    "GitHub",
-    "Learning Event",
-    "Collaboration",
-    "Competitions",
-    "Version Control",
-    "Git Basics",
-    "Speaker Sessions",
-    "Online Challenge",
-    "Git Enthusiasts",
-    "Open Source",
-    "Code Collaboration"
-  ],
+  keywords: ["CSI", "Computer society of India", "CSIVIT","Forkthis","Git.Set.Fork","Git","GitHub","Learning Event","Collaboration","Competitions","Version Control","Git Basics","Speaker Sessions","Online Challenge","Git Enthusiasts","Open Source","Code Collaboration"],
   openGraph: {
-    title: "ForkThis 2023",
+    title: "ForkThis 2023 - The Ultimate Git and GitHub Experience",
     description: "Join Forkthis, the ultimate Git and GitHub experience! Learn, collaborate, and compete in this action-packed event designed for Git enthusiasts.",
+    type: "website",
+    url: "https://forkthis-test.csivit.com",
+    siteName: "ForkThis 2023",
+    images: [
+      {
+        url: "https://i.imgur.com/L89kbA6.png",
+        width: 173,
+        height: 156,
+        alt: "ForkThis 2023 - The Ultimate Git and GitHub Experience"
+      }
+    ]
   }
 }
 

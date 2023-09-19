@@ -5,15 +5,15 @@ import FAQ from "@/sections/FAQ";
 import { useEffect, useState } from "react";
 import SmoothScroll from "@/helpers/smoothScroll";
 import { useRouter } from "next/navigation";
-import Cookie from 'js-cookie';
+import Cookie from "js-cookie";
 import { toast } from "react-toastify";
 export default function Landing() {
   const [isSignedin, setIsSignedin] = useState(false);
   useEffect(() => {
-    if(Cookie.get('token')){
+    if (Cookie.get("token")) {
       setIsSignedin(true);
     }
-  },[])
+  }, []);
 
   return (
     <div className=" w-full overflow-x-hidden">
@@ -56,22 +56,22 @@ export default function Landing() {
   );
 }
 function Nav() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const dashboardClick = () => {
-    if(Cookie.get('token')){
-      router.push('/dashboard');
+    if (Cookie.get("token")) {
+      router.push("/dashboard");
       return;
     }
-    toast.error("Kindly sign in with Github first", {theme:"dark"})
-  }
+    toast.error("Kindly sign in with Github first", { theme: "dark" });
+  };
   const leaderboardClick = () => {
-    if(Cookie.get('token')){
-      router.push('/leaderboard');
+    if (Cookie.get("token")) {
+      router.push("/leaderboard");
       return;
     }
-    toast.error("Kindly sign in with Github first", {theme:"dark"})
-  }
+    toast.error("Kindly sign in with Github first", { theme: "dark" });
+  };
 
   return (
     <div className="ham-icon w-full h-20 flex justify-center absolute top-0 left-0 z-120">
@@ -104,8 +104,8 @@ function Nav() {
       </div>
       <div
         className={`nav-container absolute top-20 md:top-0 md:relative w-[100%] md:w-[80%] flex flex-col md:flex-row justify-between z-100 ${
-          isOpen ? "visible" : "hidden"
-        }`}
+          isOpen ? "visible" : "hidden md:visible"
+        } md:flex`}
       >
         <div className="left flex bg-[#1C1333] md:bg-transparent flex-col md:flex-row gap-8 items-start px-12 py-8 md:py-0 md:px-0 md:items-center font-gilroyBlack font-bold text-3xl md:text-xl rounded-b-3xl">
           <Image
@@ -119,15 +119,33 @@ function Nav() {
             }}
             className="hidden md:block duration-300 transition-all"
           />
-          <SmoothScroll target="#footer" className="hover:text-[#8A61FF] hover:underline transition-colors duration-500">About</SmoothScroll>
-          <button onClick = {dashboardClick} className="hover:text-[#8A61FF] hover:underline transition-colors duration-500">Dashboard</button>
-          <button onClick={leaderboardClick} className="hover:text-[#8A61FF] hover:underline transition-colors duration-500">Leaderboard</button>
-          <Link href="/resources" className="md:hidden" >
+          <SmoothScroll
+            target="#footer"
+            className="hover:text-[#8A61FF] hover:underline transition-colors duration-500"
+          >
+            About
+          </SmoothScroll>
+          <button
+            onClick={dashboardClick}
+            className="hover:text-[#8A61FF] hover:underline transition-colors duration-500"
+          >
+            Dashboard
+          </button>
+          <button
+            onClick={leaderboardClick}
+            className="hover:text-[#8A61FF] hover:underline transition-colors duration-500"
+          >
+            Leaderboard
+          </button>
+          <Link href="/resources" className="md:hidden">
             Resources
           </Link>
         </div>
         <div className="right hidden md:flex gap-8 items-center font-gilroyBlack text-xl">
-          <Link href = "/resources" className="register-btn py-2 px-6 bg-transparent text-[#af99ed] border-[#af99ed] border-2 rounded-full crursor-pointer hover:text-[#af99ed] hover:bg-[#4a18bd] hover:border-[#4a18bd]  transition-all duration-300">
+          <Link
+            href="/resources"
+            className="register-btn py-2 px-6 bg-transparent text-[#af99ed] border-[#af99ed] border-2 rounded-full crursor-pointer hover:text-[#af99ed] hover:bg-[#4a18bd] hover:border-[#4a18bd]  transition-all duration-300"
+          >
             Resources
           </Link>
         </div>
