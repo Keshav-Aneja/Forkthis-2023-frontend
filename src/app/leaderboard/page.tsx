@@ -1,13 +1,13 @@
-"use client"
+"use client";
 import Sidebarrr from "@/components/Sidebar";
 import PointCard from "@/components/PointCard";
 import Leaderboard from "@/sections/Leaderboard";
 import RankTable from "@/sections/RankTable";
 // import { Leaderboard } from "styled-icons/material";
-import axios from 'axios';
-import {useState, useEffect} from 'react';
+import axios from "axios";
+import { useState, useEffect } from "react";
 import { toast } from "react-toastify";
-import Cookie from 'js-cookie';
+import Cookie from "js-cookie";
 import { useRouter } from "next/navigation";
 interface LeaderboardData {
   _id: string;
@@ -16,45 +16,59 @@ interface LeaderboardData {
   score: number;
   id: string;
   __v: number;
-  rank:number;
+  rank: number;
 }
-interface LeaderboardDisplay{
+interface LeaderboardDisplay {
   username: string;
   score: number;
 }
 
 export default function Page() {
   const router = useRouter();
-  const [first, setFirst] = useState<LeaderboardDisplay>({username: "", score: 0});
-  const [second, setSecond] = useState<LeaderboardDisplay>({username: "", score: 0});
-  const [third, setThird] = useState<LeaderboardDisplay>({username: "", score: 0});
+  const [first, setFirst] = useState<LeaderboardDisplay>({
+    username: "",
+    score: 0,
+  });
+  const [second, setSecond] = useState<LeaderboardDisplay>({
+    username: "",
+    score: 0,
+  });
+  const [third, setThird] = useState<LeaderboardDisplay>({
+    username: "",
+    score: 0,
+  });
   const [rank, setRank] = useState<number>(0);
   const [score, setScore] = useState<number>(0);
-  
+
   useEffect(() => {
     const token = Cookie.get("token");
-    if(!token){
-    router.push("/");
-    toast.error("Kindly sign in with Github", {theme:"dark"});
+    if (!token) {
+      router.push("/");
+      toast.error("Kindly sign in with Github", { theme: "dark" });
     }
     const fetchData = async () => {
-      try{        const userdata = await axios.get(`https://forkthis-backend.csivit.com/user`, {
-          headers: {
-            "Authorization": `${token}`
+      try {
+        const userdata = await axios.get(
+          `https://forkthis-backend.csivit.com/user`,
+          {
+            headers: {
+              Authorization: `${token}`,
+            },
           }
-        });
+        );
         setScore(userdata.data.score);
-        setRank(userdata.data.rank)
-        const res = await axios.get(`https://forkthis-backend.csivit.com/leaderboard`);
-        const data:LeaderboardData[] = res.data.data;
-        setFirst({username: data[0].githubUsername, score: data[0].score});
-        setSecond({username: data[1].githubUsername, score: data[1].score});
-        setThird({username: data[2].githubUsername, score: data[2].score});
+        setRank(userdata.data.rank);
+        const res = await axios.get(
+          `https://forkthis-backend.csivit.com/leaderboard`
+        );
+        const data: LeaderboardData[] = res.data.data;
+        setFirst({ username: data[0].githubUsername, score: data[0].score });
+        setSecond({ username: data[1].githubUsername, score: data[1].score });
+        setThird({ username: data[2].githubUsername, score: data[2].score });
+      } catch (err: any) {
+        toast.error(err, { theme: "dark" });
       }
-      catch(err:any){
-        toast.error(err, {theme:"dark"});
-      }
-    }
+    };
     fetchData();
   }, []);
 
