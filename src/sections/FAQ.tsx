@@ -11,7 +11,7 @@ const faqData = [
     question:
       " Are the points earned during the course of the event redeemable?",
     answer:
-      "The top 3 in the leaderboard based on points will win from a prize pool!",
+      "The top 3 in the leaderboard based on points will win exciting prizes!",
   },
   {
     qID: 3,
