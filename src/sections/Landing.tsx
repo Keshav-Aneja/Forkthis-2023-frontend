@@ -38,7 +38,7 @@ export default function Landing() {
         {isSignedin ? (
           <Link
             href="/dashboard"
-            className="reg-button py-2 px-12 text-black bg-[#8A61FF] text-2xl  rounded-full font-bolder hover:text-[#af99ed] cursor-pointer hover:bg-[#4a18bd] transition-all duration-300"
+            className="reg-button py-2 px-12 text-black bg-[#8A61FF] text-2xl rounded-full font-bolder hover:text-[#af99ed] cursor-pointer hover:bg-[#4a18bd] transition-all duration-300"
           >
             View Dashboard
           </Link>
