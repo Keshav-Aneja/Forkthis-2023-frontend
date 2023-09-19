@@ -5,12 +5,23 @@ import { useMediaQuery } from "@mui/material";
 import Link from "next/link";
 // import Resources from "../app/resources/page";
 import Image from "next/image";
+import Cookie from 'js-cookie';
+import {useRouter} from 'next/navigation';
+import { toast } from "react-toastify";
+
 export default function Sidebarrr() {
+  const router = useRouter();
   const [menuOpened, setMenuOpened] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpened((prevMenuOpened) => !prevMenuOpened);
   };
+
+  const handleLogout = () => {
+    Cookie.remove("token");
+    toast.success("Logged out successfully", { theme: "dark" });
+    router.push("/");
+  }
 
   return (
     <div
@@ -109,8 +120,8 @@ export default function Sidebarrr() {
               Resources
             </span>
           </Link>
-          <Link
-            href="/resources"
+          <button
+            onClick = {handleLogout}
             className="w-full flex justify-between gap-5 items-center md:justify-center md:gap-2 lg:flex-col lg:h-[33.3%]  lg:hover:bg-black  lg:hover:text-sm duration-300"
           >
             <Image
@@ -124,7 +135,7 @@ export default function Sidebarrr() {
             <span className="font-gilroyRegular font-bold w-[45%] md:w-full text-center">
               Logout
             </span>
-          </Link>
+          </button>
         </div>
       </div>
     </div>
