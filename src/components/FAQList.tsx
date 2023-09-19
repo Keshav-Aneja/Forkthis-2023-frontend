@@ -15,7 +15,7 @@ const FAQList: React.FC<FAQListProps> = ({ que, ans }) => {
   return (
     <div
       className={`w-full p-4 lg:bg-[rgba(0,0,0,0)] lg:p-6 font-manrope border-b-2 border-gray-600 lg:hover:bg-[#8A61FF] rounded-xl ${
-        isOpen ? "h-44 bg-[#8A61FF]" : "h-20 overflow-hidden bg-[rgba(0,0,0,0)]"
+        isOpen ? "h-28 md:h-36 bg-[#8A61FF]" : "h-20 overflow-hidden bg-[rgba(0,0,0,0)]"
       } transition-height duration-200`}
       onClick={() => {
         rotateImage();

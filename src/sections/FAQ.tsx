@@ -4,33 +4,32 @@ const faqData = [
     qID: 1,
     question: "Are there any pre-requisites for the event?",
     answer:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio vitae cum culpa omnis corporis? Adipisci consequuntur tempore quaerat omnis sit.",
+      "Create a GitHub account for yourself, and you're all set!",
   },
   {
     qID: 2,
     question:
       " Are the points earned during the course of the event redeemable?",
     answer:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio vitae cum culpa omnis corporis? Adipisci consequuntur tempore quaerat omnis sit.",
+      "The top 3 in the leaderboard based on points will win from a prize pool!",
   },
   {
     qID: 3,
     question: "What do we need to bring to the venue?",
-    answer:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio vitae cum culpa omnis corporis? Adipisci consequuntur tempore quaerat omnis sit.",
+    answer:"Just bring your laptop, chargers and whatever will help you focus. Don't forget to bring along your zeal to learn.",
   },
   {
-    qID: 3,
+    qID: 4,
     question:
       "Do we need to report to the venue throughout the three days of the event?",
     answer:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio vitae cum culpa omnis corporis? Adipisci consequuntur tempore quaerat omnis sit.",
+      "Nope! Your esteemed presence is only required on the first day.",
   },
   {
-    qID: 3,
+    qID: 5,
     question: "What do we get at the end of the 3 days?",
     answer:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio vitae cum culpa omnis corporis? Adipisci consequuntur tempore quaerat omnis sit.",
+      "Apart from the knowledge and feeling of accomplishment? We've got you covered with tons of cool surprises!",
   },
 ];
 import FAQList from "../components/FAQList";
