@@ -18,7 +18,7 @@ const Leaderboard: React.FC<rankings> = ({ rankHolders, rankScores }) => {
           ></Image>
 
           <div className="md:w-full flex flex-col items-center justify-center">
-            <div className="Name text-3xl font-gilroyBlack">
+            <div className="Name text-3xl font-gilroyBlack text-center">
               {rankHolders[0]}
             </div>
             <div className="score font-gilroyRegular">
@@ -38,7 +38,7 @@ const Leaderboard: React.FC<rankings> = ({ rankHolders, rankScores }) => {
           ></Image>
 
           <div className="md:w-full flex flex-col items-center justify-center">
-            <div className="Name text-3xl font-gilroyBlack">
+            <div className="Name text-3xl font-gilroyBlack text-center">
               {rankHolders[1]}
             </div>
             <div className="score font-gilroyRegular">
@@ -58,7 +58,7 @@ const Leaderboard: React.FC<rankings> = ({ rankHolders, rankScores }) => {
           ></Image>
 
           <div className="md:w-full flex flex-col items-center justify-center">
-            <div className="Name text-3xl font-gilroyBlack">
+            <div className="Name text-3xl font-gilroyBlack text-center">
               {rankHolders[2]}
             </div>
             <div className="score font-gilroyRegular">
