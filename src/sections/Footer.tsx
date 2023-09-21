@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className="flex justify-between items-center flex-col w-full  gap-[1.5rem] text-gray-300 bg-[#8A61FF33] px-[1rem] py-[2rem] mt-16"
+      className="flex justify-between items-center flex-col w-full  gap-[1.5rem] text-gray-300 bg-[#8A61FF33] px-[1rem] py-[2rem]"
     >
       {/* add  logo here */}
       <div className="flex justify-center items-center w-[12%] gap-[1.4rem]">

@@ -3,8 +3,7 @@ const faqData = [
   {
     qID: 1,
     question: "Are there any pre-requisites for the event?",
-    answer:
-      "Create a GitHub account for yourself, and you're all set!",
+    answer: "Create a GitHub account for yourself, and you're all set!",
   },
   {
     qID: 2,
@@ -16,14 +15,14 @@ const faqData = [
   {
     qID: 3,
     question: "What do we need to bring to the venue?",
-    answer:"Just bring your laptop, chargers and whatever will help you focus. Don't forget to bring along your zeal to learn.",
+    answer:
+      "Just bring your laptop, chargers and whatever will help you focus. Don't forget to bring along your zeal to learn.",
   },
   {
     qID: 4,
     question:
       "Do we need to report to the venue throughout the three days of the event?",
-    answer:
-      "Nope! Your esteemed presence is only required on the first day.",
+    answer: "Nope! Your esteemed presence is only required on the first day.",
   },
   {
     qID: 5,
@@ -35,8 +34,8 @@ const faqData = [
 import FAQList from "../components/FAQList";
 export default function FAQ() {
   return (
-    <div className="faq-container z-10 w-full min-h-[100vh] h-full flex justify-center items-center lg:mt-24">
-      <div className="w-[100%] h-fit p-4 md:p-24 pt-10 md:pt-20 bg-[#8A61FF33] flex flex-col">
+    <div className="faq-container z-10 w-full   min-h-[100vh] h-full flex justify-center items-center lg:mt-24 bg-[#8A61FF33]">
+      <div className="w-[100%] h-full p-4 md:p-24 pt-10 md:pt-20  flex flex-col">
         <div className="heading text-white text-4xl font-gilroyBlack font-bolder mb-4 text-center md:text-left">
           FAQs
         </div>

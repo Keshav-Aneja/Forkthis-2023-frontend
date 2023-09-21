@@ -137,7 +137,8 @@ const TimelineComponent = () => {
             </div>
 
             <p className="pt-5 text-left text-xs font-medium text-[#E8E8EE] sm:text-base">
-              Kickstarting Forkthis with a bang, setting the stage for Git.Set.Fork!
+              Kickstarting Forkthis with a bang, setting the stage for
+              Git.Set.Fork!
             </p>
           </motion.div>
         </motion.div>
@@ -164,7 +165,8 @@ const TimelineComponent = () => {
               </p>
             </div>
             <p className="pt-5 text-left text-xs font-medium text-[#E8E8EE] sm:text-base">
-              Master the art of branching, committing, and merging in a hands-on open source workshop.
+              Master the art of branching, committing, and merging in a hands-on
+              open source workshop.
             </p>
           </motion.div>
         </motion.div>
@@ -336,7 +338,8 @@ const TimelineComponent = () => {
             </div>
 
             <p className="pt-5 text-left text-xs font-medium text-[#E8E8EE] sm:text-base">
-              Get inspired as industry experts share their Git journey and insights.
+              Get inspired as industry experts share their Git journey and
+              insights.
             </p>
           </motion.div>
         </motion.div>
@@ -363,7 +366,7 @@ const TimelineComponent = () => {
               </p>
             </div>
             <p className="pt-5 text-left text-xs font-medium text-[#E8E8EE] sm:text-base">
-            Dive into the world of Git gamification, where learning meets fun.
+              Dive into the world of Git gamification, where learning meets fun.
             </p>
           </motion.div>
         </motion.div>
@@ -535,7 +538,8 @@ const TimelineComponent = () => {
             </div>
 
             <p className="pt-5 text-left text-xs font-medium text-[#E8E8EE] sm:text-base">
-              Compete head-to-head in Git challenges, proving your skills in real-time.
+              Compete head-to-head in Git challenges, proving your skills in
+              real-time.
             </p>
           </motion.div>
         </motion.div>
