@@ -1,4 +1,35 @@
 [
+    {   "srNo":"Sr. No.",
+        "repoName":"Repository name",
+        "techStack":"Tech stack",
+        "issues":"No. of issues",
+        "issuesList":[
+            {
+                "srNo": 1,
+                "description": "Issue Description",
+                "difficulty": "Easy",
+                "points": 5
+            },
+            {
+                "srNo": 2,
+                "description": "Issue Description",
+                "difficulty": "Mid",
+                "points": 5
+            },
+            {
+                "srNo": 3,
+                "description": "Issue Description",
+                "difficulty": "Hard",
+                "points": 5
+            },
+            {
+                "srNo": 4,
+                "description": "Issue Description",
+                "difficulty": "Hard",
+                "points": 5
+            }
+        ]
+    },
     {   "srNo":1,
         "repoName":"FFCS Planner",
         "techStack":"MongoDB ExpressJS ReactJS NodeJS",

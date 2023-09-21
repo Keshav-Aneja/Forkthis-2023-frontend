@@ -41,12 +41,12 @@ const CollapseCard: React.FC<RepoDetails> = ({
         // }}
       >
         <section className="bg-[#000] flex justify-between items-center py-[5px] px-8 w-full ">
-          <p className="w-[3%] text-center">{srNo}</p>
-          <h1 className="w-[70%] md:w-[30%] text-center">{repoName}</h1>
-          <h3 className="sm:hidden md:block w-[50%] text-center">
+          <div className="w-[6%] text-center">{srNo}</div>
+          <div className="w-[70%] md:w-[30%] text-center">{repoName}</div>
+          <div className="sm:hidden md:block w-[50%] text-center">
             {techStack}
-          </h3>
-          <p className="w-[3%] text-center">{issues}</p>
+          </div>
+          <div className="w-[10%] text-center">{issues}</div>
 
           <Image
             width={16}
