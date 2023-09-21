@@ -1,6 +1,7 @@
 "use client"
 import axios from 'axios';
 import {useState, useEffect} from 'react';
+import { toast } from 'react-toastify';
 
 interface LeaderboardData {
   _id: string;
@@ -24,8 +25,8 @@ export default function RankTable() {
         const data:LeaderboardData[] = res.data.data;
         setLeaderboardData(data);
       }
-      catch(err){
-        console.log(err);
+      catch(err:any){
+        toast.error(err, {theme: 'dark'});
       }
     }
     fetchData();
