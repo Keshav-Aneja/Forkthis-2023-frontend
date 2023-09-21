@@ -132,7 +132,7 @@ const TimelineComponent = () => {
               </p>
               <span className="hidden text-4xl text-[#E8E8EE] md:block">|</span>
               <p className="text-left text-base text-[#E8E8EE] sm:ml-2">
-                10:00 pm onwards
+                10:00 am onwards
               </p>
             </div>
 
