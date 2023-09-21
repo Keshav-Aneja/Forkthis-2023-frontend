@@ -51,7 +51,6 @@ export default function Landing() {
           </Link>
         )}
       </div>
-      <FAQ></FAQ>
     </div>
   );
 }

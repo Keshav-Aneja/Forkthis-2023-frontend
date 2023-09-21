@@ -3,8 +3,8 @@
 import CountdownTimer from "@/components/CountdownTimer";
 import ProgressCircular from "../components/ProgressCircular";
 import axios from "axios";
-import {useEffect, useState} from 'react';
-import Cookie from 'js-cookie';
+import { useEffect, useState } from "react";
+import Cookie from "js-cookie";
 import { toast } from "react-toastify";
 
 export default function DashboardInfo() {
@@ -14,36 +14,31 @@ export default function DashboardInfo() {
 
   useEffect(() => {
     const getScore = async () => {
-      try{
+      try {
         const token = Cookie.get("token");
-        const response = await axios.get(`https://forkthis-backend.csivit.com/user`,
-        {
-          headers: {
-            "Authorization": `${token}`
+        const response = await axios.get(
+          `https://forkthis-backend.csivit.com/user`,
+          {
+            headers: {
+              Authorization: `${token}`,
+            },
           }
-        });
+        );
         setScore(response.data.score);
         setIssuesClosed(response.data.noOfIssuesSolved);
+      } catch (err: any) {
+        toast.error(err, { theme: "dark" });
       }
-      catch(err:any){
-        toast.error(err,{theme:"dark"});
-      }
-    }
+    };
     getScore();
-  }, [])
-  
+  }, []);
+
   return (
     <div>
       <div className="flex py-5 mb-12 mt-20 justify-center items-center font-gilroyRegular text-5xl font-black lg:mt-0 lg:mb-10">
         Dashboard
       </div>
-      <div className="flex w-[100%] bg-opacity-30 px-3 py-5 flex-col items-center justify-center md:flex-row md:justify-between md:items-start gap-10 md:gap-0">
-        <div className="ml-0 px-2 py-2 flex flex-col justify-between items-center md:ml-10 w-[22%] min-w-fit">
-          <div className="mb-12 text-2xl font-bold font-gilroyRegular text-center">
-            Time Left
-          </div>
-          <CountdownTimer targetDate={targetDate} />
-        </div>
+      <div className="flex w-[100%] bg-opacity-30 px-3 py-5 flex-col items-center justify-center md:flex-row md:justify-around md:items-start gap-10 md:gap-0">
         <div className="px-2 py-2 justify-center">
           <div className="mb-12 text-2xl font-bold font-gilroyRegular text-center">
             Points Scored
@@ -55,6 +50,13 @@ export default function DashboardInfo() {
             color={"#7C4BC8"}
           />
         </div>
+        <div className="ml-0 px-2 py-2 flex flex-col justify-between items-center md:ml-10 w-[22%] min-w-fit">
+          <div className="mb-12 text-2xl font-bold font-gilroyRegular text-center">
+            Time Left
+          </div>
+          <CountdownTimer targetDate={targetDate} />
+        </div>
+
         <div className="px-2 py-2 justify-center ">
           <div className="mb-12 text-2xl font-bold font-gilroyRegular text-center">
             Issues Closed
