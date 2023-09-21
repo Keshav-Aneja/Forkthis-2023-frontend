@@ -33,7 +33,7 @@
     {
         "srNo":2,
         "repoName":"ForkThis DiscordBot",
-        "techStack":"DiscordJS NodeJS MySQL Tailwind",
+        "techStack":"DiscordJS NodeJS",
         "issues":7,
         "issuesList":[
             {
@@ -90,7 +90,7 @@
         "srNo":3,
         "repoName":"MiniGames",
         "techStack":"HTML CSS JS Python ReactJS",
-        "issues":5,
+        "issues":8,
         "issuesList":[
             {
                 "srNo": 1,
@@ -121,8 +121,72 @@
     {
         "srNo": 4,
         "repoName":"Lost and found",
-        "techStack":"Next.js MongoDB MySQL Tailwind",
+        "techStack":"ReactJS NodeJS ExpressJS Sqlite",
         "issues":5,
+        "issuesList":[
+            {
+                "srNo": 1,
+                "description": "Issue Description",
+                "difficulty": "Easy",
+                "points": 5
+            },
+            {
+                "srNo": 2,
+                "description": "Issue Description",
+                "difficulty": "Mid",
+                "points": 5
+            },
+            {
+                "srNo": 3,
+                "description": "Issue Description",
+                "difficulty": "Hard",
+                "points": 5
+            },
+            {
+                "srNo": 4,
+                "description": "Issue Description",
+                "difficulty": "Hard",
+                "points": 5
+            }
+        ]
+    },
+    {
+        "srNo": 5,
+        "repoName":"LendLogic",
+        "techStack":"FastAPI Flask Scikit-learn",
+        "issues":7,
+        "issuesList":[
+            {
+                "srNo": 1,
+                "description": "Issue Description",
+                "difficulty": "Easy",
+                "points": 5
+            },
+            {
+                "srNo": 2,
+                "description": "Issue Description",
+                "difficulty": "Mid",
+                "points": 5
+            },
+            {
+                "srNo": 3,
+                "description": "Issue Description",
+                "difficulty": "Hard",
+                "points": 5
+            },
+            {
+                "srNo": 4,
+                "description": "Issue Description",
+                "difficulty": "Hard",
+                "points": 5
+            }
+        ]
+    },
+    {
+        "srNo": 6,
+        "repoName":"Whatsapp Automation",
+        "techStack":"Python Selenium",
+        "issues":7,
         "issuesList":[
             {
                 "srNo": 1,
