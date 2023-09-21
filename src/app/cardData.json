@@ -1,0 +1,62 @@
+{
+  "YouTube": [
+    {
+      "title": "Video 1",
+      "link": "https://www.youtube.com/watch?v=4XpnKHJAok8",
+      "content": "Linus Torvalds visits Google to share his thoughts on git.",
+      "imgSrc": "unnamed.jpg"
+    },
+    {
+      "title": "Video 2",
+      "link": "https://www.youtube.com/watch?v=HkdAHXoRtos",
+      "content": "Learn how to use Git and Github in this interactive tutorial ",
+      "imgSrc": "fireship2.jpg"
+    },
+    {
+      "title": "Video 3",
+      "link": "https://www.youtube.com/watch?v=Ez8F0nW6S-w",
+      "content": "Complete Git and GitHub Tutorial for Beginners",
+      "imgSrc": "apnaclg3.jpg"
+    }
+  ],
+  "Websites": [
+    {
+      "title": "Good First Issue",
+      "link": "https://goodfirstissue.dev/",
+      "content": "Beginner-friendly tasks from leading open-source projects for easy contributions.",
+      "imgSrc": "gfi.png"
+    },
+    {
+      "title": "Hacktoberfest",
+      "link": "https://hacktoberfest.com/",
+      "content": "Hacktoberfest supports community-driven open-source projects and their contributors.",
+      "imgSrc": "hacktober.jpg"
+    },
+    {
+      "title": "Roadmap.sh",
+      "link": "https://roadmap.sh/",
+      "content": "Create the best roadmaps and get help to begin your tech-career",
+      "imgSrc": "roadmapsh.png"
+    }
+  ],
+  "GitHub Repositories": [
+    {
+      "title": "Open Source Programs",
+      "link": "https://github.com/tapaswenipathak/Open-Source-Programs",
+      "content": "Some of the most useful and interesting open source programs",
+      "imgSrc": "github.png"
+    },
+    {
+      "title": "First Contributions",
+      "link": "https://github.com/firstcontributions/first-contributions",
+      "content": "This project aims to simplify and guide the way beginners make their first contribution.",
+      "imgSrc": "github.png"
+    },
+    {
+      "title": "Public APIs",
+      "link": "https://github.com/public-apis/public-apis",
+      "content": "A collective list of free APIs for use in software and web development",
+      "imgSrc": "github.png"
+    }
+  ]
+}
