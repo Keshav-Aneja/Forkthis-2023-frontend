@@ -40,37 +40,37 @@ export default function Page() {
   const [rank, setRank] = useState<number>(0);
   const [score, setScore] = useState<number>(0);
 
-  // useEffect(() => {
-  //   const token = Cookie.get("token");
-  //   if (!token) {
-  //     router.push("/");
-  //     toast.error("Kindly sign in with Github", { theme: "dark" });
-  //   }
-  //   const fetchData = async () => {
-  //     try {
-  //       const userdata = await axios.get(
-  //         `https://forkthis-backend.csivit.com/user`,
-  //         {
-  //           headers: {
-  //             Authorization: `${token}`,
-  //           },
-  //         }
-  //       );
-  //       setScore(userdata.data.score);
-  //       setRank(userdata.data.rank);
-  //       const res = await axios.get(
-  //         `https://forkthis-backend.csivit.com/leaderboard`
-  //       );
-  //       const data: LeaderboardData[] = res.data.data;
-  //       setFirst({ username: data[0].githubUsername, score: data[0].score });
-  //       setSecond({ username: data[1].githubUsername, score: data[1].score });
-  //       setThird({ username: data[2].githubUsername, score: data[2].score });
-  //     } catch (err: any) {
-  //       toast.error(err, { theme: "dark" });
-  //     }
-  //   };
-  //   fetchData();
-  // }, []);
+  useEffect(() => {
+    const token = Cookie.get("token");
+    if (!token) {
+      router.push("/");
+      toast.error("Kindly sign in with Github", { theme: "dark" });
+    }
+    const fetchData = async () => {
+      try {
+        const userdata = await axios.get(
+          `https://forkthis-backend.csivit.com/user`,
+          {
+            headers: {
+              Authorization: `${token}`,
+            },
+          }
+        );
+        setScore(userdata.data.score);
+        setRank(userdata.data.rank);
+        const res = await axios.get(
+          `https://forkthis-backend.csivit.com/leaderboard`
+        );
+        const data: LeaderboardData[] = res.data.data;
+        setFirst({ username: data[0].githubUsername, score: data[0].score });
+        setSecond({ username: data[1].githubUsername, score: data[1].score });
+        setThird({ username: data[2].githubUsername, score: data[2].score });
+      } catch (err: any) {
+        toast.error(err, { theme: "dark" });
+      }
+    };
+    fetchData();
+  }, []);
 
   return (
     <div className="flex w-[100%] z-0">
