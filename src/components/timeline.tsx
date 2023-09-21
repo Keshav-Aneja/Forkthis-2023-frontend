@@ -25,7 +25,7 @@ const cardVariants: Variants = {
 const TimelineComponent = () => {
   return (
     <>
-      <div className="m-auto flex h-max flex-col justify-center text-white  lg:w-1/2">
+      <div className="m-auto flex h-max flex-col justify-center text-white  lg:w-1/2 md:pt-36 lg:pt-28">
         <div
           className={`text-timelineheader text-center text-3xl font-extrabold text-[#FFF6E8] md:text-5xl lg:h-12 font-gilroyBlack`}
         >

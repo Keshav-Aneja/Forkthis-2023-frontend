@@ -20,11 +20,11 @@ export default function Landing() {
       <div className="circle-bg absolute overflow-hidden w-full h-[100vh] md:h-[120vh] lg:h-[100vh] -z-10 md:top-[-30vh] lg:top-[20vh]">
         <div
           className="circle w-[200vw] h-[200vw] lg:w-[150vw] lg:h-[150vw] border-[50px] md:border-[80px] border-[#4a18bd] rounded-full relative 
-        top-[-65vw] md:top-[-105vw] left-[-50vw] lg:left-[-25vw] blur-xl"
+        top-[-65vw] md:top-[-125vw] lg:top-[-110vw] left-[-50vw] lg:left-[-25vw] blur-xl"
         ></div>
         <div
           className="circle w-[200vw] h-[200vw] lg:w-[150vw] lg:h-[150vw] border-[25px] md:border-[40px] border-[#8A61FF] rounded-full absolute 
-          top-[-64vw] md:top-[-104vw] left-[-50vw] lg:left-[-25vw] blur-xl"
+          top-[-64vw] md:top-[-125vw] lg:top-[-110vw] left-[-50vw] lg:left-[-25vw] blur-xl"
         ></div>
       </div>
       <Nav></Nav>
