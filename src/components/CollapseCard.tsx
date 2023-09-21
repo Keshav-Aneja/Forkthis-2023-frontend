@@ -34,11 +34,11 @@ const CollapseCard: React.FC<RepoDetails> = ({
   return (
     <section className="bg-[#000] flex justify-around items-center py-[5px] flex-col border-gradientA font-gilroyRegular border-[#212426] border-b-[0.5px] w-full">
       <section
-        className="bg-[#000] flex justify-between items-center py-[5px] px-8 w-full cursor-pointer"
-        onClick={() => {
-          setIsCollapsed(!isCollapsed);
-          rotateImage();
-        }}
+        className="bg-[#000] flex justify-between items-center py-[5px] px-8 w-full "
+        // onClick={() => {
+        //   setIsCollapsed(!isCollapsed);
+        //   rotateImage();
+        // }}
       >
         <section className="bg-[#000] flex justify-between items-center py-[5px] px-8 w-full ">
           <p className="w-[3%] text-center">{srNo}</p>
@@ -58,11 +58,11 @@ const CollapseCard: React.FC<RepoDetails> = ({
               width: "auto",
               height: "auto",
             }}
-            className="duration-300 transition-all"
-            onClick={() => {
-              setIsCollapsed(!isCollapsed);
-              rotateImage();
-            }}
+            className="duration-300 transition-all hidden"
+            // onClick={() => {
+            //   setIsCollapsed(!isCollapsed);
+            //   rotateImage();
+            // }}
           />
         </section>
       </section>
