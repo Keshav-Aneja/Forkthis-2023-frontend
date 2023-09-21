@@ -13,7 +13,7 @@ const PointCard: React.FC<cardDetails> = ({
   totalPoints,
 }) => {
   return (
-    <div className="points-card w-full flex-col md:w-[33%] h-fit bg-[#212426] flex lg:flex-row justify-between items-center rounded-2xl px-4 py-6 md:py-2 gap-6 lg:gap-0 drop-shadow-2xl mb-6">
+    <div className="points-card w-full flex-col md:w-[33%] h-fit bg-[#212426] flex lg:flex-row justify-between items-center rounded-2xl px-6 py-6 md:py-4 gap-6 lg:gap-4 drop-shadow-2xl mb-6">
       <div className="profile flex flex-row md:flex-col items-center gap-6">
         <Image
           src="/images/user.png"
@@ -22,8 +22,10 @@ const PointCard: React.FC<cardDetails> = ({
           height={80}
           className="drop-shadow-2xl"
         ></Image>
-        <p className="font-gilroyRegular text-lg font-bold tracking-wider">
-          My Rank : {rank}
+        <p className="font-gilroyRegular text-lg font-bold tracking-wider text-center w-full">
+          My Rank
+          <br />
+          {rank}
         </p>
       </div>
       <div
