@@ -1,249 +1,224 @@
 [
-    {   "srNo":"Sr. No.",
-        "repoName":"Repository name",
-        "techStack":"Tech stack",
-        "issues":"No. of issues",
-        "issuesList":[
-            {
-                "srNo": 1,
-                "description": "Issue Description",
-                "difficulty": "Easy",
-                "points": 5
-            },
-            {
-                "srNo": 2,
-                "description": "Issue Description",
-                "difficulty": "Mid",
-                "points": 5
-            },
-            {
-                "srNo": 3,
-                "description": "Issue Description",
-                "difficulty": "Hard",
-                "points": 5
-            },
-            {
-                "srNo": 4,
-                "description": "Issue Description",
-                "difficulty": "Hard",
-                "points": 5
-            }
-        ]
-    },
-    {   "srNo":1,
-        "repoName":"FFCS Planner",
-        "techStack":"MongoDB ExpressJS ReactJS NodeJS",
-        "issues":5,
-        "issuesList":[
-            {
-                "srNo": 1,
-                "description": "Issue Description",
-                "difficulty": "Easy",
-                "points": 5
-            },
-            {
-                "srNo": 2,
-                "description": "Issue Description",
-                "difficulty": "Mid",
-                "points": 5
-            },
-            {
-                "srNo": 3,
-                "description": "Issue Description",
-                "difficulty": "Hard",
-                "points": 5
-            },
-            {
-                "srNo": 4,
-                "description": "Issue Description",
-                "difficulty": "Hard",
-                "points": 5
-            }
-        ]
-    },
-    {
-        "srNo":2,
-        "repoName":"ForkThis DiscordBot",
-        "techStack":"DiscordJS NodeJS",
-        "issues":7,
-        "issuesList":[
-            {
-                "srNo": 1,
-                "description": "resources: links haven't been added properly, some unclickable",
-                "difficulty": "easy",
-                "points": 10
-            },
-            {
-                "srNo": 2,
-                "description": "prize pool embed : syntax error in footer",
-                "difficulty": "medium",
-                "points": 30
-            },
-            {
-                "srNo": 3,
-                "description": "socials button not working",
-                "difficulty": "hard",
-                "points": 50
-            },
-            {
-                "srNo": 4,
-                "description": "react button not working",
-                "difficulty": "hard",
-                "points": 50
-            },
-            {
-                "srNo":5,
-                "description":"repos list embed : syntax error in footer",
-                "difficulty":"medium",
-                "points":30
-            },
-            {
-                "srNo":6,
-                "description":"syntax error in footer of repos list embed",
-                "difficulty":"easy",
-                "points":10
-            },
-            {
-                "srNo":7,
-                "description":"message.reply for help and resources : adding the embed : syntax error",
-                "difficulty":"easy",
-                "points":10
-            },
-            {
-                "srNo":8,
-                "description":"joke api: joke doesn't appear on the screen (message.reply left empty)",
-                "difficulty":"medium",
-                "points":30
-            }
-        ]
-    },
-    {
-        "srNo":3,
-        "repoName":"MiniGames",
-        "techStack":"HTML CSS JS Python ReactJS",
-        "issues":8,
-        "issuesList":[
-            {
-                "srNo": 1,
-                "description": "Issue Description",
-                "difficulty": "Easy",
-                "points": 5
-            },
-            {
-                "srNo": 2,
-                "description": "Issue Description",
-                "difficulty": "Mid",
-                "points": 5
-            },
-            {
-                "srNo": 3,
-                "description": "Issue Description",
-                "difficulty": "Hard",
-                "points": 5
-            },
-            {
-                "srNo": 4,
-                "description": "Issue Description",
-                "difficulty": "Hard",
-                "points": 5
-            }
-        ]
-    },
-    {
+  {
+    "srNo": "Sr. No.",
+    "repoName": "Repository name",
+    "techStack": "Tech stack",
+    "issues": "No. of issues",
+    "link": "#",
+    "issuesList": [
+      {
+        "srNo": 1,
+        "description": "Issue Description",
+        "difficulty": "Easy",
+        "points": 5
+      },
+      {
+        "srNo": 2,
+        "description": "Issue Description",
+        "difficulty": "Mid",
+        "points": 5
+      },
+      {
+        "srNo": 3,
+        "description": "Issue Description",
+        "difficulty": "Hard",
+        "points": 5
+      },
+      {
         "srNo": 4,
-        "repoName":"Lost and found",
-        "techStack":"ReactJS NodeJS ExpressJS Sqlite",
-        "issues":5,
-        "issuesList":[
-            {
-                "srNo": 1,
-                "description": "Issue Description",
-                "difficulty": "Easy",
-                "points": 5
-            },
-            {
-                "srNo": 2,
-                "description": "Issue Description",
-                "difficulty": "Mid",
-                "points": 5
-            },
-            {
-                "srNo": 3,
-                "description": "Issue Description",
-                "difficulty": "Hard",
-                "points": 5
-            },
-            {
-                "srNo": 4,
-                "description": "Issue Description",
-                "difficulty": "Hard",
-                "points": 5
-            }
-        ]
-    },
-    {
+        "description": "Issue Description",
+        "difficulty": "Hard",
+        "points": 5
+      }
+    ]
+  },
+  {
+    "srNo": 1,
+    "repoName": "ForkThis DiscordBot",
+    "techStack": "DiscordJS NodeJS",
+    "issues": 7,
+    "link": "https://github.com/csivitu/ForkThisDiscordBot",
+    "issuesList": [
+      {
+        "srNo": 1,
+        "description": "resources: links haven't been added properly, some unclickable",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "srNo": 2,
+        "description": "prize pool embed : syntax error in footer",
+        "difficulty": "medium",
+        "points": 30
+      },
+      {
+        "srNo": 3,
+        "description": "socials button not working",
+        "difficulty": "hard",
+        "points": 50
+      },
+      {
+        "srNo": 4,
+        "description": "react button not working",
+        "difficulty": "hard",
+        "points": 50
+      },
+      {
         "srNo": 5,
-        "repoName":"LendLogic",
-        "techStack":"FastAPI Flask Scikit-learn",
-        "issues":7,
-        "issuesList":[
-            {
-                "srNo": 1,
-                "description": "Issue Description",
-                "difficulty": "Easy",
-                "points": 5
-            },
-            {
-                "srNo": 2,
-                "description": "Issue Description",
-                "difficulty": "Mid",
-                "points": 5
-            },
-            {
-                "srNo": 3,
-                "description": "Issue Description",
-                "difficulty": "Hard",
-                "points": 5
-            },
-            {
-                "srNo": 4,
-                "description": "Issue Description",
-                "difficulty": "Hard",
-                "points": 5
-            }
-        ]
-    },
-    {
+        "description": "repos list embed : syntax error in footer",
+        "difficulty": "medium",
+        "points": 30
+      },
+      {
         "srNo": 6,
-        "repoName":"Whatsapp Automation",
-        "techStack":"Python Selenium",
-        "issues":7,
-        "issuesList":[
-            {
-                "srNo": 1,
-                "description": "Issue Description",
-                "difficulty": "Easy",
-                "points": 5
-            },
-            {
-                "srNo": 2,
-                "description": "Issue Description",
-                "difficulty": "Mid",
-                "points": 5
-            },
-            {
-                "srNo": 3,
-                "description": "Issue Description",
-                "difficulty": "Hard",
-                "points": 5
-            },
-            {
-                "srNo": 4,
-                "description": "Issue Description",
-                "difficulty": "Hard",
-                "points": 5
-            }
-        ]
-    }
-    
+        "description": "syntax error in footer of repos list embed",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "srNo": 7,
+        "description": "message.reply for help and resources : adding the embed : syntax error",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "srNo": 8,
+        "description": "joke api: joke doesn't appear on the screen (message.reply left empty)",
+        "difficulty": "medium",
+        "points": 30
+      }
+    ]
+  },
+  {
+    "srNo": 2,
+    "repoName": "MiniGames",
+    "techStack": "HTML CSS JS Python ReactJS",
+    "issues": 8,
+    "link": "https://github.com/csivitu/Minigames",
+    "issuesList": [
+      {
+        "srNo": 1,
+        "description": "Issue Description",
+        "difficulty": "Easy",
+        "points": 5
+      },
+      {
+        "srNo": 2,
+        "description": "Issue Description",
+        "difficulty": "Mid",
+        "points": 5
+      },
+      {
+        "srNo": 3,
+        "description": "Issue Description",
+        "difficulty": "Hard",
+        "points": 5
+      },
+      {
+        "srNo": 4,
+        "description": "Issue Description",
+        "difficulty": "Hard",
+        "points": 5
+      }
+    ]
+  },
+  {
+    "srNo": 3,
+    "repoName": "Lost and found",
+    "techStack": "ReactJS NodeJS ExpressJS Sqlite",
+    "issues": 5,
+    "link": "https://github.com/csivitu/LostAndFound",
+    "issuesList": [
+      {
+        "srNo": 1,
+        "description": "Issue Description",
+        "difficulty": "Easy",
+        "points": 5
+      },
+      {
+        "srNo": 2,
+        "description": "Issue Description",
+        "difficulty": "Mid",
+        "points": 5
+      },
+      {
+        "srNo": 3,
+        "description": "Issue Description",
+        "difficulty": "Hard",
+        "points": 5
+      },
+      {
+        "srNo": 4,
+        "description": "Issue Description",
+        "difficulty": "Hard",
+        "points": 5
+      }
+    ]
+  },
+  {
+    "srNo": 4,
+    "repoName": "LendLogic",
+    "techStack": "FastAPI Flask Scikit-learn",
+    "issues": 7,
+    "link": "https://github.com/csivitu/LendLogic",
+    "issuesList": [
+      {
+        "srNo": 1,
+        "description": "Issue Description",
+        "difficulty": "Easy",
+        "points": 5
+      },
+      {
+        "srNo": 2,
+        "description": "Issue Description",
+        "difficulty": "Mid",
+        "points": 5
+      },
+      {
+        "srNo": 3,
+        "description": "Issue Description",
+        "difficulty": "Hard",
+        "points": 5
+      },
+      {
+        "srNo": 4,
+        "description": "Issue Description",
+        "difficulty": "Hard",
+        "points": 5
+      }
+    ]
+  },
+  {
+    "srNo": 5,
+    "repoName": "Whatsapp Automation",
+    "techStack": "Python Selenium",
+    "issues": 7,
+    "link": "https://github.com/ACM-VIT/WhatsApp-Automation",
+    "issuesList": [
+      {
+        "srNo": 1,
+        "description": "Issue Description",
+        "difficulty": "Easy",
+        "points": 5
+      },
+      {
+        "srNo": 2,
+        "description": "Issue Description",
+        "difficulty": "Mid",
+        "points": 5
+      },
+      {
+        "srNo": 3,
+        "description": "Issue Description",
+        "difficulty": "Hard",
+        "points": 5
+      },
+      {
+        "srNo": 4,
+        "description": "Issue Description",
+        "difficulty": "Hard",
+        "points": 5
+      }
+    ]
+  }
 ]

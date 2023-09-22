@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { Collapse } from "react-collapse";
 import ProgressCircular from "./ProgressCircular";
-
+import Link from "next/link";
 interface RepoDetails {
   srNo: number;
   repoName: string;
@@ -47,7 +47,6 @@ const CollapseCard: React.FC<RepoDetails> = ({
             {techStack}
           </div>
           <div className="w-[10%] text-center">{issues}</div>
-
           <Image
             width={16}
             height={16}
