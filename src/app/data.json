@@ -93,7 +93,7 @@
     "srNo": 2,
     "repoName": "MiniGames",
     "techStack": "HTML CSS JS Python ReactJS",
-    "issues": 8,
+    "issues": 31,
     "link": "https://github.com/csivitu/Minigames",
     "issuesList": [
       {
@@ -126,7 +126,7 @@
     "srNo": 3,
     "repoName": "Lost and found",
     "techStack": "ReactJS NodeJS ExpressJS Sqlite",
-    "issues": 5,
+    "issues": 13,
     "link": "https://github.com/csivitu/LostAndFound",
     "issuesList": [
       {
@@ -192,7 +192,7 @@
     "srNo": 5,
     "repoName": "Whatsapp Automation",
     "techStack": "Python Selenium",
-    "issues": 7,
+    "issues": 10,
     "link": "https://github.com/ACM-VIT/WhatsApp-Automation",
     "issuesList": [
       {

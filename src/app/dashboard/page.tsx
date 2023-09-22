@@ -8,14 +8,14 @@ import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 
 export default function Page() {
-  // const router = useRouter();
-  // useEffect(() => {
-  //   const token = Cookie.get("token");
-  //   if (!token) {
-  //     router.push("/");
-  //     toast.error("Kindly sign in with Github", { theme: "dark" });
-  //   }
-  // }, []);
+  const router = useRouter();
+  useEffect(() => {
+    const token = Cookie.get("token");
+    if (!token) {
+      router.push("/");
+      toast.error("Kindly sign in with Github", { theme: "dark" });
+    }
+  }, []);
 
   return (
     <div className="flex w-[100%] z-0">

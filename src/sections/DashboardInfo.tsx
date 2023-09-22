@@ -46,7 +46,7 @@ export default function DashboardInfo() {
           <ProgressCircular
             name={"pointsScored"}
             currVal={score}
-            totalVal={600}
+            totalVal={1000}
             color={"#7C4BC8"}
           />
         </div>
@@ -64,7 +64,7 @@ export default function DashboardInfo() {
           <ProgressCircular
             name={"issuesClosed"}
             currVal={issuesClosed}
-            totalVal={16}
+            totalVal={68}
             color={"#22A385"}
           />
         </div>
