@@ -77,7 +77,7 @@ export default function Page() {
       <Sidebarrr />
       <div className="w-[100%] lg:ml-[7%] px-10 mt-16">
         <div className="top-section flex flex-col md:flex-row justify-between items-center">
-          <PointCard rank={rank} scoredPoints={score} totalPoints={600} />
+          <PointCard rank={rank} scoredPoints={score} totalPoints={1000} />
           <div
             className="w-[100%] h-1 md:w-8 md:h-0 lg:w-[3px] lg:h-[300px] lg:block p-0 m-0
         bg-gradient-to-r from-[rgba(33,36,38,1)] via-[rgba(84,87,89,1)] to-[rgba(33,36,38,1)] lg:bg-gradient-to-t"
