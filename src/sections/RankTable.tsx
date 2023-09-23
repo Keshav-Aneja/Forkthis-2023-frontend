@@ -1,7 +1,7 @@
-"use client"
-import axios from 'axios';
-import {useState, useEffect} from 'react';
-import { toast } from 'react-toastify';
+"use client";
+import axios from "axios";
+import { useState, useEffect } from "react";
+import { toast } from "react-toastify";
 
 interface LeaderboardData {
   _id: string;
@@ -10,25 +10,26 @@ interface LeaderboardData {
   score: number;
   id: string;
   __v: number;
-  rank:number;
+  rank: number;
 }
 
 export default function RankTable() {
   const [currPage, setPage] = useState(0);
   const [leaderboarddata, setLeaderboardData] = useState<LeaderboardData[]>([]);
-  let maxPage = Math.ceil(leaderboarddata.length / 20);
+  let maxPage = Math.ceil(leaderboarddata.length / 10);
 
   useEffect(() => {
     const fetchData = async () => {
-      try{
-        const res = await axios.get(`https://forkthis-backend.csivit.com/leaderboard?limit=20&page=${currPage}`);
-        const data:LeaderboardData[] = res.data.data;
+      try {
+        const res = await axios.get(
+          `https://forkthis-backend.csivit.com/leaderboard?limit=10&page=${currPage}`
+        );
+        const data: LeaderboardData[] = res.data.data;
         setLeaderboardData(data);
+      } catch (err: any) {
+        toast.error(err, { theme: "dark" });
       }
-      catch(err:any){
-        toast.error(err, {theme: 'dark'});
-      }
-    }
+    };
     fetchData();
   }, [currPage]);
 
@@ -42,11 +43,14 @@ export default function RankTable() {
             <td>Points</td>
           </tr>
           {leaderboarddata.map((data, i) => (
-                <tr key = {i} className="text-center text-gray-400 border-t-2 border-gray-700 h-10 font-gilroyRegular">
-                <td>{data.rank}</td>
-                <td>{data.githubUsername}</td>
-                <td>{data.score}</td>
-              </tr>
+            <tr
+              key={i}
+              className="text-center text-gray-400 border-t-2 border-gray-700 h-10 font-gilroyRegular"
+            >
+              <td>{data.rank}</td>
+              <td>{data.githubUsername}</td>
+              <td>{data.score}</td>
+            </tr>
           ))}
         </table>
       </div>
@@ -81,4 +85,3 @@ export default function RankTable() {
     </>
   );
 }
-
