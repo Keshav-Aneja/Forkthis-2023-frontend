@@ -5,8 +5,8 @@ import { useMediaQuery } from "@mui/material";
 import Link from "next/link";
 // import Resources from "../app/resources/page";
 import Image from "next/image";
-import Cookie from 'js-cookie';
-import {useRouter} from 'next/navigation';
+import Cookie from "js-cookie";
+import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 
 export default function Sidebarrr() {
@@ -17,11 +17,11 @@ export default function Sidebarrr() {
     setMenuOpened((prevMenuOpened) => !prevMenuOpened);
   };
 
-  const handleLogout = () => {
-    Cookie.remove("token");
-    toast.success("Logged out successfully", { theme: "dark" });
-    router.push("/");
-  }
+  // const handleLogout = () => {
+  //   Cookie.remove("token");
+  //   toast.success("Logged out successfully", { theme: "dark" });
+  //   router.push("/");
+  // }
 
   return (
     <div
@@ -121,7 +121,7 @@ export default function Sidebarrr() {
             </span>
           </Link>
           <button
-            onClick = {handleLogout}
+            // onClick = {handleLogout}
             className="w-full flex justify-between gap-5 items-center md:justify-center md:gap-2 lg:flex-col lg:h-[33.3%]  lg:hover:bg-black  lg:hover:text-sm duration-300"
           >
             <Image
