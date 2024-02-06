@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 import Cookie from "js-cookie";
 import { toast } from "react-toastify";
 export default function Landing() {
-  const [isSignedin, setIsSignedin] = useState(false);
+  const [isSignedin, setIsSignedin] = useState(true);
   // useEffect(() => {
   //   if (Cookie.get("token")) {
   //     setIsSignedin(true);
