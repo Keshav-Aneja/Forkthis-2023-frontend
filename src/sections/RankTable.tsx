@@ -18,20 +18,20 @@ export default function RankTable() {
   const [leaderboarddata, setLeaderboardData] = useState<LeaderboardData[]>([]);
   let maxPage = Math.ceil(leaderboarddata.length / 10);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await axios.get(
-          `https://forkthis-backend.csivit.com/leaderboard?limit=10&page=${currPage}`
-        );
-        const data: LeaderboardData[] = res.data.data;
-        setLeaderboardData(data);
-      } catch (err: any) {
-        toast.error(err, { theme: "dark" });
-      }
-    };
-    fetchData();
-  }, [currPage]);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const res = await axios.get(
+  //         `https://forkthis-backend.csivit.com/leaderboard?limit=10&page=${currPage}`
+  //       );
+  //       const data: LeaderboardData[] = res.data.data;
+  //       setLeaderboardData(data);
+  //     } catch (err: any) {
+  //       toast.error(err, { theme: "dark" });
+  //     }
+  //   };
+  //   fetchData();
+  // }, [currPage]);
 
   return (
     <>

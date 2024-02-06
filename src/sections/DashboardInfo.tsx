@@ -12,26 +12,26 @@ export default function DashboardInfo() {
   const [score, setScore] = useState(0);
   const [issuesClosed, setIssuesClosed] = useState(0);
 
-  useEffect(() => {
-    const getScore = async () => {
-      try {
-        const token = Cookie.get("token");
-        const response = await axios.get(
-          `https://forkthis-backend.csivit.com/user`,
-          {
-            headers: {
-              Authorization: `${token}`,
-            },
-          }
-        );
-        setScore(response.data.score);
-        setIssuesClosed(response.data.noOfIssuesSolved);
-      } catch (err: any) {
-        toast.error(err, { theme: "dark" });
-      }
-    };
-    getScore();
-  }, []);
+  // useEffect(() => {
+  //   const getScore = async () => {
+  //     try {
+  //       const token = Cookie.get("token");
+  //       const response = await axios.get(
+  //         `https://forkthis-backend.csivit.com/user`,
+  //         {
+  //           headers: {
+  //             Authorization: `${token}`,
+  //           },
+  //         }
+  //       );
+  //       setScore(response.data.score);
+  //       setIssuesClosed(response.data.noOfIssuesSolved);
+  //     } catch (err: any) {
+  //       toast.error(err, { theme: "dark" });
+  //     }
+  //   };
+  //   getScore();
+  // }, []);
 
   return (
     <div>

@@ -9,11 +9,11 @@ import Cookie from "js-cookie";
 import { toast } from "react-toastify";
 export default function Landing() {
   const [isSignedin, setIsSignedin] = useState(false);
-  useEffect(() => {
-    if (Cookie.get("token")) {
-      setIsSignedin(true);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (Cookie.get("token")) {
+  //     setIsSignedin(true);
+  //   }
+  // }, []);
 
   return (
     <div className=" w-full overflow-x-hidden">
