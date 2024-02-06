@@ -57,20 +57,16 @@ export default function Landing() {
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
-  // const dashboardClick = () => {
-  //   if (Cookie.get("token")) {
-  //     router.push("/dashboard");
-  //     return;
-  //   }
-  //   toast.error("Kindly sign in with Github first", { theme: "dark" });
-  // };
-  // const leaderboardClick = () => {
-  //   if (Cookie.get("token")) {
-  //     router.push("/leaderboard");
-  //     return;
-  //   }
-  //   toast.error("Kindly sign in with Github first", { theme: "dark" });
-  // };
+  const dashboardClick = () => {
+      router.push("/dashboard");
+    // toast.error("Kindly sign in with Github first", { theme: "dark" });
+  };
+  const leaderboardClick = () => {
+
+      router.push("/leaderboard");
+
+    // toast.error("Kindly sign in with Github first", { theme: "dark" });
+  };
 
   return (
     <div className="ham-icon w-full h-20 flex justify-center absolute top-0 left-0 z-120">
@@ -131,7 +127,7 @@ function Nav() {
             Dashboard
           </button>
           <button
-            // onClick={leaderboardClick}
+            onClick={leaderboardClick}
             className="hover:text-[#8A61FF] hover:underline transition-colors duration-500"
           >
             Leaderboard
